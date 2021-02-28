@@ -1,0 +1,1106 @@
+html {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+/* --------------------------------------------HEADER START ------------------------------------------------------*/
+
+header {
+  background-color: #36506C;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+}
+
+header > p
+{
+  font-size: 1.5em;
+  height: 50%;
+  margin: 0;
+  margin-right: 2%;
+  color: white;
+  font-weight: 100;
+  max-width: 20%;
+  overflow: hidden;
+}
+
+#loggedUserImg
+{
+  height: 100%;
+  width: 200px;
+  margin-right: 2%;
+  align-items: center;
+  display: flex;
+}
+
+#userImg
+{
+  height: 50px;
+  width: 50px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: solid 3px white;
+  transform: scale(0.7) !important;
+  background-size: 70% !important;
+  cursor: pointer;
+}
+
+#headerOptions
+{
+  right: 0% !important;
+}
+
+#headerNotificationList
+{
+  width: 18% !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  max-height: 70vh !important;
+}
+
+#headerOptions, #headerNotificationList
+{
+  z-index: 2;
+  background-color: #36506C;
+  position: absolute;
+  top: 46px;
+  right: 5%;
+  width: 15%;
+  font-size: 0.9em;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  transition-duration: 0.3s;
+  opacity: 0;
+  padding-left: 0;
+  border: solid 1px white;
+}
+
+.crossNotification
+{
+  border: none;
+  background-color: transparent;
+}
+
+.crossNotification:hover
+{
+  cursor: pointer;
+}
+
+.headerNav
+{
+  height: 100%;
+  display: flex;
+  width: 100%;
+  flex-flow: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#NotificationContainer
+{
+  list-style-type: none;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+#headerOptions > li, #headerNotificationList > li
+{
+  padding-left: 10%;
+  height: 60px;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  transition: background-color 0.1s;
+}
+
+#headerOptions > li:nth-child(even) , #headerNotificationList > li:nth-child(even)
+{
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+}
+
+#headerOptions > li:last-child , #headerNotificationList > :last-child
+{
+  border-bottom: none !important;
+}
+
+#headerOptions > li > a
+{
+  color: white;
+  text-decoration: none;
+  display: flex;
+  transition: color 0.2s;
+  width: 90%;
+  height: 100%;
+  align-items: center;
+  font-size: 90%;
+}
+
+.notificationLink
+{
+  color: white;
+  text-decoration: none;
+  display: flex;
+  transition: color 0.2s;
+  width: 85%;
+  height: 100%;
+  align-items: center;
+  font-size: 90%;
+}
+
+#headerOptions > li > a > i
+{
+  margin-right: 5%;
+  background-size: 80%;
+  transform: scale(1.5);
+}
+
+#headerNotificationList > li > a > i
+{
+  margin-right: 5%;
+  background-size: 80%;
+  transform: scale(1.2);
+}
+
+#headerOptions > li:hover, #headerNotificationList > li:hover
+{
+  background-color: #1B2133;
+  cursor: pointer;
+}
+
+#notificationPlusIcon
+{
+  margin-right: 3%;
+}
+
+.headerNotification
+{
+  height: 50px;
+  width: 50px;
+  background-repeat: no-repeat;
+  background-size: 75%;
+  background-position: center;
+  align-self: center;
+  cursor: pointer;
+}
+
+
+/* --------------------------------------------HEADER END ------------------------------------------------------*/
+
+
+/* --------------------------------------------ASIDE START ------------------------------------------------------*/
+
+.asideMainTable
+{
+  display: table;
+  min-height: 940px;
+}
+
+aside{
+  background-color: #233142;
+  width: 250px;
+  flex-direction: column;
+  z-index: 3;
+  box-shadow: 3px 0px 20px #233142;
+  display: table-cell;
+  position: relative;
+  min-height: 700px;
+  min-width: 250px;
+  vertical-align: top;
+}
+
+#logoContainer
+{
+  width:90%;
+  height: 120px;
+  margin-bottom: 30px;
+  color: white !important;
+  display: flex;
+  flex-direction: row;
+  margin-left: 9px;
+  margin-top: 15px;
+  font-size: 150%;
+  align-items: center;
+  justify-content: center;
+}
+
+aside > ul {
+  margin-bottom: 15px;;
+  font-size: 1.25em;
+  height: 160px;
+  margin-left: -17px;
+}
+
+aside > ul > li:hover a
+{
+  color: #2984B7;
+}
+
+aside > ul > li > a > i
+{
+  margin-right: 8%;
+}
+
+/* --------------------------------------------ASIDE END ------------------------------------------------------*/
+
+
+/* --------------------------------------------FOOTER START ------------------------------------------------------*/
+
+footer{
+  background-color: #233142;
+  height: 165px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 4;
+  position: relative;
+}
+
+.list
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  height: 80%;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 8%;
+  margin-top: 0.7%;
+}
+
+#copyrightText
+{
+  text-align: center;
+  color: white;
+  align-self: center;
+  width: 100%;
+  height: 5%;
+  margin-top: -0.3%;
+}
+
+.footerList
+{
+  height: 46%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.footerList > h1
+{
+  font-size: 1.6em;
+}
+
+.footerList  > li > a:hover
+{
+  color: #2984B7;
+}
+
+/* --------------------------------------------FOOTER END ------------------------------------------------------*/
+
+/* --------------------------------------------MAIN START ------------------------------------------------------*/
+
+main{
+  background-color: white;
+  width: 100vw;
+  display: table-cell;
+  min-width: 350px;
+}
+
+.main-wrap
+{
+  width: 90%;
+  background-color: white;
+  padding: 5%;
+  margin-top: 60px;
+}
+
+/* --------------------------------------------MAIN END ------------------------------------------------------*/
+
+/* --------------------------------------------GENERAL START ------------------------------------------------------*/
+
+ul > li
+{
+  color: white;
+  font-size: 100%;
+  list-style-type: none;
+  width: 100%;
+  height: 33.33%;
+  transition: color 0.2s;
+}
+
+li > a
+{
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s;
+}
+
+
+
+/* --------------------------------------------GENERAL END ------------------------------------------------------*/
+
+/* --------------------------------------------Dashboard Start ------------------------------------------------------*/
+
+.dashboard{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.dashboardWrap
+{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+
+.dashboardUser
+{
+
+}
+
+.dashboardContent
+{
+  width: 100%;
+}
+
+.dashboardContent > h1
+{
+  color: #36506C;
+  font-size: 2vw;
+}
+
+.dashboardNews > h1
+{
+    color: #D2C5C5;
+}
+
+.dashboardContentWrapper
+{width: 100%;display: flex;flex-wrap: wrap;flex-direction: row;}
+
+.dashboardElement
+{
+    width: 6vw !important;
+    height: 12vh !important;
+    margin-right: 5%;
+    border: 3px solid #707070;
+    margin-bottom: 5%;
+    background-size: 60% !important;
+}
+
+.dashboardNews
+{
+    width: 35%;
+}
+
+.newsContainer
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.newsContent
+{
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    width: 100%;
+    background-color: #D9E0E2;
+    margin-bottom: 6px;
+}
+
+.newsIMG
+{
+    width: 25% !important;
+    height: 100% !important;
+    background-size: 40% !important;
+    background-position: center;
+}
+
+.newsText
+{
+    width: 75%;
+    height: 100%;
+    color: white;
+    padding: 5%;
+    margin: 0 auto;
+}
+
+/* --------------------------------------------Dashboard END ------------------------------------------------------*/
+
+
+/* --------------------------------------------User Start -----------------------------------------------------------*/
+
+.profileHeader
+{width: 100%;height: 20%;display: flex;flex-direction: row;align-items: center;font-size: 1.5em;color: #D2C5C5;}
+
+.profileIMG
+{
+    width: 9vw !important;
+    height: 16vh !important;
+    margin-right: 4%;
+    border-radius: 50%;
+    transform: scale(1) !important;
+    border: 1px solid;
+    background-size: 60% !important;
+
+}
+
+.profileInformation
+{
+    margin-top: 5vh;
+    height: 60%;
+    width: 100%;
+    color: #D2C5C5;
+}
+
+.userInformationDetails,.userInformationOutput
+{
+    height: 100%;
+    width: 30%;
+}
+
+.userInformationOutput
+{
+    width: 40%;
+}
+
+.informationDetailsWrap
+{
+    height: 60%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+/* --------------------------------------------User END -------------------------------------------------------------*/
+
+
+
+
+/* ----------------------------------------- FormContainer START -------------------------------------------- */
+
+.formContainer
+{
+    display: flex;
+    width: 20vw;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 10%;
+    padding-top: 0;
+    border: 1px solid black;
+    background-color: #A4BCC4;
+    color: white;
+}
+
+.formContainer > h1
+{
+    font-size: 2.5em;
+}
+
+.formContainer > input
+{
+    height: 3vh;
+    border: 2px solid #A4BCC4;
+    width: 84%;
+}
+
+.formContainer > label
+{
+}
+
+.formContainer > label
+{
+    font-size: 1.5em;
+    margin-top: 5%;
+}
+
+.authContainer
+{
+
+}
+
+.containerBtn
+{
+  width: 40%;
+  background-color: white;
+  color: #A4BCC4;
+  border: 3px solid white;
+  font-weight: bold;
+  font-size: 1.2vw;
+  border-radius: 4px;
+  margin-top: 8%;
+  height: 2vw;
+}
+
+.formLinks
+{
+    width: 20vw;
+    height: 4vh;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 2;
+    padding-left: 10%;
+    padding-right: 10%;
+    align-items: center;
+}
+
+.formLinks > a
+{
+    color: #707070;
+    text-decoration: none;
+}
+
+
+.formWrap
+{
+    position: absolute;
+    top: 32%;
+    left: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.formTextarea
+{
+    width: 35vw;
+    height: 20vh;
+    resize: none;
+    border: 2px solid #A4BCC4;
+}
+
+/* ----------------------------------------- FormContainer END -------------------------------------------- */
+
+/* ----------------------------------------- RowContainers Start -------------------------------------------- */
+
+.rowContainer{
+
+}
+
+/* ----------------------------------------- RowContainers END -------------------------------------------- */
+
+.formWrap
+{
+    position: absolute;
+    top: 32%;
+    left: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.contactContainer
+{
+    padding: 0;
+    background-color: transparent;
+    color: #A4BCC4;
+    border: none;
+}
+
+.contactContainer > .containerBtn
+{
+    border: 2px solid #A4BCC4;
+    color: white;
+    background-color: #A4BCC4;
+}
+
+
+
+/* ------------------------------------- ModalArea Start -------------------------------------------- */
+
+.modalArea
+{
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* ------------------------------------- ModalArea END -------------------------------------------- */
+
+
+/* ------------------------------------- Icons Start -------------------------------------------- */
+
+.userIcon,.addFileIcon,.arrowIcon,.checkIcon,.crossIcon,.cloudIcon,.downloadIcon,.editIcon,.fileIcon,
+.folderIcon,.gearIcon,.homeIcon,.letterIcon,.longarrowIcon,.plusIcon,.searchIcon,.playIcon,.searchIcon,
+.sortboxIcon,.sortIcon,.sortStraightIcon,.trashIcon,.powerIcon,.editIconWhite,.folderIconWhite,.userIconWhite,
+.searchIconWhite,.burgerMenuIcon,.worldIcon,.addFileIconBlue,.shareIcon,.addFolderIcon,.addFolderIconWhite,.trashIconWhite
+,.shareIconWhite,.downloadIconWhite,.versionControlIconWhite,.versionControlIcon,.plusIconBlue
+{
+  height: 30px;
+  width: 26px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.worldIcon
+{
+  background-image: url("./assets/Images/Icons/WorldIcon.svg") !important;
+}
+
+.notificationIcon
+{
+  background-image: url("./assets/Images/Icons/MessageIcon.svg") !important;
+}
+
+.notificationIconNew
+{
+  background-image: url("./assets/Images/Icons/NewMessageIcon.svg") !important;
+  height: 40px !important;
+  width: 59px !important;
+}
+
+.editIconWhite
+{
+  background-image: url("./assets/Images/Icons/EditIconWhite.svg") !important;
+}
+
+.folderIconWhite
+{
+  background-image: url("./assets/Images/Icons/FolderIconWhite.svg") !important;
+}
+
+.addFolderIcon
+{
+  background-image: url("./assets/Images/Icons/AddFolderIcon.svg") !important;
+  background-size: 70% !important;
+}
+
+.addFolderIconWhite
+{
+  background-image: url("./assets/Images/Icons/AddFolderIconWhite.svg") !important;
+  background-size: 55% !important;
+}
+
+.userIconWhite
+{
+  background-image: url("./assets/Images/Icons/UserIconWhite.svg") !important;
+}
+
+.searchIconWhite
+{
+  background-image: url("./assets/Images/Icons/SearchIconWhite.svg") !important;
+}
+
+.burgerMenuIcon
+{
+  background-image: url("./assets/Images/Icons/HamburgerMenuIcon.svg") !important;
+}
+
+.powerIcon
+{
+    background-image: url("./assets/Images/Icons/LogOutIconWhite.svg") !important;
+}
+
+.addFileIcon
+{
+    background-image: url("./assets/Images/Icons/AddFileIcon.svg") !important;
+}
+
+.addFileIconBlue
+{
+  background-image: url("./assets/Images/Icons/AddFileIconBlue.svg") !important;
+}
+
+.shareIcon
+{
+  background-image: url("./assets/Images/Icons/ShareIcon.svg") !important;
+}
+
+.shareIconWhite
+{
+  background-image: url("./assets/Images/Icons/ShareIconWhite.svg") !important;
+  margin-left: -0.5%;
+}
+
+.versionControlIconWhite
+{
+  background-image: url("./assets/Images/Icons/VersionControlIconWhite.svg") !important;
+  background-size: 30% !important;
+}
+
+.versionControlIcon
+{
+  background-image: url("./assets/Images/Icons/VersionControlIcon.svg") !important;
+  background-size: 30% !important;
+}
+
+.arrowIcon
+{
+    background-image: url("./assets/Images/Icons/ArrowIcon.svg") !important;
+}
+
+.checkIcon
+{
+    background-image: url("./assets/Images/Icons/CheckIcon.svg") !important;
+}
+
+.cloudIcon
+{
+    background-image: url("./assets/Images/Icons/CloudIcon.svg") !important;
+}
+
+.crossIcon
+{
+    background-image: url("./assets/Images/Icons/CrossIcon_White.svg") !important;
+    transform: scale(0.8) !important;
+}
+
+.downloadIcon
+{
+    background-image: url("./assets/Images/Icons/DownloadIcon.svg") !important;
+}
+
+.editIcon
+{
+    background-image: url("./assets/Images/Icons/EditIcon.svg") !important;
+}
+
+.fileIcon
+{
+    background-image: url("./assets/Images/Icons/FileIcon.svg") !important;
+}
+
+.folderIcon
+{
+    background-image: url("./assets/Images/Icons/FolderIcon.svg") !important;
+}
+
+.gearIcon
+{
+    background-image: url("./assets/Images/Icons/GearIcon.svg") !important;
+}
+
+.homeIcon
+{
+    background-image: url("./assets/Images/Icons/HomeIconWhite.svg") !important;
+}
+
+.letterIcon
+{
+    background-image: url("./assets/Images/Icons/LetterIconWhite.svg") !important;
+}
+
+.longarrowIcon
+{
+    background-image: url("./assets/Images/Icons/LongArrowIcon.svg") !important;
+}
+
+.playIcon
+{
+    background-image: url("./assets/Images/Icons/PlayIcon.svg") !important;
+}
+
+.plusIcon
+{
+    background-image: url("./assets/Images/Icons/PlusIcon_White.svg") !important;
+}
+
+.plusIconBlue
+{
+  background-image: url("./assets/Images/Icons/PlusIcon.svg") !important;
+}
+
+.searchIcon
+{
+    background-image: url("./assets/Images/Icons/SearchIcon.svg") !important;
+}
+
+.sortboxIcon
+{
+    background-image: url("./assets/Images/Icons/SortboxIcon.svg") !important;
+}
+
+.sortIcon
+{
+    background-image: url("./assets/Images/Icons/SortIcon.svg") !important;
+}
+
+.sortStraightIcon
+{
+    background-image: url("./assets/Images/Icons/SortStraightIcon.svg") !important;
+}
+
+.trashIcon
+{
+    background-image: url("./assets/Images/Icons/TrashIcon.svg") !important;
+    background-size: 40% !important;
+}
+
+.trashIconWhite
+{
+  background-image: url("./assets/Images/Icons/TrashIconWhite.svg") !important;
+  background-size: 35% !important;
+}
+
+.downloadIconWhite
+{
+  background-image: url("./assets/Images/Icons/DownloadIconWhite.svg") !important;
+  background-size: 50% !important;
+}
+
+.userIcon
+{
+    background-image: url("./assets/Images/Icons/UserIcon.svg") !important;
+}
+
+#burgerMenu
+{
+  display: none;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.logoIcon
+{
+  background-image: url("./assets/Images/Icons/LogoIcon.svg") !important;
+  height: 70px;
+  width: 70px;
+  margin-right: 10%;
+  margin-top: 5%;
+  background-color: transparent!important;
+  background-repeat: no-repeat;
+  background-size: 100% !important;
+}
+
+
+/* ------------------------------------- Icons END -------------------------------------------- */
+
+
+/* -------------------------------------Buttons START ------------------------------------------*/
+
+.buttonSuccess
+{
+  color: white;
+  background-color: #21EF88;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  transition: 0.2s background-color;
+}
+
+.buttonCancel
+{
+  color: white;
+  background-color: #F80008;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  transition: 0.2s background-color;
+}
+
+.buttonSuccess:hover
+{
+  background-color:#A4BCC4;
+  cursor: pointer;
+}
+
+.buttonSuccess:disabled{
+  opacity: 0.4;
+  background-color:#A4BCC4;
+}
+
+.buttonCancel:hover
+{
+  background-color:#A4BCC4;
+  cursor: pointer;
+}
+
+/* -------------------------------------Buttons END --------------------------------------------*/
+
+
+/* -------------------------------------Media Query width < 1270  --------------------------------------------*/
+
+@media (max-width: 1270px) {
+
+  /* ------------------------------------- Layout Start -------------------------------------------------*/
+  aside{
+    width: 100px;
+    min-width: 100px;
+    max-width: 100px;
+  }
+
+  aside > ul > li
+  {
+    font-size: 50%;
+    margin-bottom: 15%;
+  }
+
+  aside > ul > li > a
+  {
+    flex-direction: column;
+    width: 100px;
+    margin-left: -54%;
+  }
+
+  aside > ul > li > a > i {
+    margin-right: 0%;
+  }
+
+  aside > ul{
+    margin-bottom: 40px;
+    margin-left: -5px;
+  }
+
+  #logoContainer {
+    width: 100%;
+    margin-left: 0%;
+    font-size: 100%;
+  }
+
+  #logoContainer > h1 {
+    display: none;
+  }
+
+  #headerOptions, #headerNotificationList {
+    width: 28% !important;
+  }
+
+  ul > li
+  {
+    font-size: 90%;
+  }
+
+  .logoIcon {
+    width: 60% !important;
+    margin-right: 0% !important;
+  }
+
+  /* ------------------------------------- Layout End -------------------------------------------------*/
+
+}
+
+@media (min-height: 1000px) {
+
+  .asideMainTable
+  {
+    min-height: 100vh;
+  }
+}
+
+/* -------------------------------------Media Query width < 800  --------------------------------------------*/
+
+@media (max-width: 800px) {
+
+  /* ------------------------------------- Layout Start -------------------------------------------------*/
+  aside
+  {
+    width: 250px;
+    margin-top: 0px;
+    left: -20px;
+    transition: 0.4s;
+    min-width: 250px;
+    max-width: 250px;
+  }
+
+  .visible
+  {
+    left: 250px;
+  }
+
+  .asideMainTable {
+    margin-left: -250px;
+  }
+
+  .main-wrap
+  {
+    margin-top: 100px;
+  }
+
+  aside > ul > li
+  {
+    font-size: 100%;
+    margin-bottom: 0%;
+  }
+
+  aside > ul > li > a
+  {
+    flex-direction: row;
+    width: 93%;
+    margin-left: 0%;
+  }
+
+  aside > ul > li > a > i {
+    margin-right: 4%;
+  }
+
+  aside > ul{
+    margin-bottom: 5%;
+    margin-left: -5%;
+  }
+
+  #logoContainer {
+    width:90%;
+    height: 100px;
+    margin-left: 4%;
+    font-size: 150%;
+    margin-top: 25%;
+    margin-bottom: 5%;
+  }
+
+  #logoContainer > h1 {
+    display: block;
+  }
+
+  #headerOptions, #headerNotificationList {
+    width: 40% !important;
+  }
+
+  .logoIcon {
+    width: 30% !important;
+    margin-right: 10% !important;
+  }
+
+  #burgerMenu
+  {
+    display: block;
+    position: absolute;
+    left: 20px;
+    transform: scale(1.2);
+  }
+
+  /* ------------------------------------- Layout End -------------------------------------------------*/
+
+}
+
+/* -------------------------------------Media Query width < 550  --------------------------------------------*/
+
+@media (max-width: 550px) {
+
+  #headerOptions, #headerNotificationList {
+    width: 55% !important;
+  }
+
+}

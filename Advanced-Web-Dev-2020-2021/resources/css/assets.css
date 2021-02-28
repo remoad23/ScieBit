@@ -1,0 +1,288 @@
+/* ----------------------------------------- FormContainer START -------------------------------------------- */
+
+.formContainer
+{
+    display: flex;
+    width: 20vw;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 10%;
+    padding-top: 0;
+    border: 1px solid black;
+    background-color: #A4BCC4;
+    color: white;
+}
+
+.formContainer > h1
+{
+    font-size: 2.5em;
+}
+
+.formContainer > input
+{
+    height: 3vh;
+    border: 2px solid #A4BCC4;
+    width: 84%;
+}
+
+.formContainer > label
+{
+}
+
+.formContainer > label
+{
+    font-size: 1.5em;
+    margin-top: 5%;
+}
+
+.authContainer
+{
+
+}
+
+.containerBtn
+{
+    width: 6vw;
+    height: 10%;
+    background-color: white;
+    color: #A4BCC4;
+    border: 3px solid white;
+    font-weight: bold;
+    font-size: 1.2em;
+    border-radius: 4px;
+    margin-top: 8%;
+    height: 3vh;
+}
+
+.formLinks
+{
+    width: 20vw;
+    height: 4vh;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 2;
+    padding-left: 10%;
+    padding-right: 10%;
+    align-items: center;
+}
+
+.formLinks > a
+{
+    color: #707070;
+    text-decoration: none;
+}
+
+
+.formWrap
+{
+    position: absolute;
+    top: 32%;
+    left: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.formTextarea
+{
+    width: 35vw;
+    height: 20vh;
+    resize: none;
+    border: 2px solid #A4BCC4;
+}
+
+/* ----------------------------------------- FormContainer END -------------------------------------------- */
+
+/* ------------------------------------- ERROR Start -------------------------------------------------*/
+.errorContainer
+{
+    display: flex;
+    flex-flow: row;
+    background-color:#233142;
+    border: 2px solid;
+    border-radius: 15px;
+    height: 5vh;
+    width: 10vw;
+}
+/* ------------------------------------- ERROR End -------------------------------------------------*/
+
+
+/* ----------------------------------------- RowContainers Start -------------------------------------------- */
+
+.rowContainer{
+
+}
+
+/* ----------------------------------------- RowContainers END -------------------------------------------- */
+
+.formWrap
+{
+    position: absolute;
+    top: 32%;
+    left: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.contactContainer
+{
+    padding: 0;
+    background-color: transparent;
+    color: #A4BCC4;
+    border: none;
+}
+
+.contactContainer > .containerBtn
+{
+    border: 2px solid #A4BCC4;
+    color: white;
+    background-color: #A4BCC4;
+}
+
+
+
+/* ------------------------------------- ModalArea Start -------------------------------------------- */
+
+.modalArea
+{
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* ------------------------------------- ModalArea END -------------------------------------------- */
+
+
+/* ------------------------------------- Icons Start -------------------------------------------- */
+
+.userIcon,.addFileIcon,.arrowIcon,.checkIcon,.crossIcon,.cloudIcon,.downloadIcon,.editIcon,.fileIcon,
+.folderIcon,.gearIcon,.homeIcon,.letterIcon,.longarrowIcon,.plusIcon,.searchIcon,.playIcon,.searchIcon,
+.sortboxIcon,.sortIcon,.sortStraightIcon,.trashIcon,.powerIcon
+{
+    height: 1.9vh;
+    width: 1vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.powerIcon
+{
+    background-image: url("../Images/Icons/PowerIcon.svg") !important;
+}
+
+.addFileIcon
+{
+    background-image: url("../Images/Icons/AddFileIcon.svg") !important;
+}
+
+.arrowIcon
+{
+    background-image: url("../Images/Icons/ArrowIcon.svg") !important;
+}
+
+.checkIcon
+{
+    background-image: url("../Images/Icons/CheckIcon.svg") !important;
+}
+
+.cloudIcon
+{
+    background-image: url("../Images/Icons/CloudIcon.svg") !important;
+}
+
+.crossIcon
+{
+    background-image: url("../Images/Icons/CrossIcon.svg") !important;
+}
+
+.downloadIcon
+{
+    background-image: url("../Images/Icons/DownloadIcon.svg") !important;
+}
+
+.editIcon
+{
+    background-image: url("../Images/Icons/EditIcon.svg") !important;
+}
+
+.fileIcon
+{
+    background-image: url("../Images/Icons/FileIcon.svg") !important;
+}
+
+.folderIcon
+{
+    background-image: url("../Images/Icons/FolderIcon.svg") !important;
+}
+
+.gearIcon
+{
+    background-image: url("../Images/Icons/GearIcon.svg") !important;
+}
+
+.homeIcon
+{
+    background-image: url("../Images/Icons/HomeIcon.svg") !important;
+}
+
+.letterIcon
+{
+    background-image: url("../Images/Icons/LetterIcon.svg") !important;
+}
+
+.longarrowIcon
+{
+    background-image: url("../Images/Icons/LongArrowIcon.svg") !important;
+}
+
+.playIcon
+{
+    background-image: url("../Images/Icons/PlayIcon.svg") !important;
+}
+
+.plusIcon
+{
+    background-image: url("../Images/Icons/PlusIcon.svg") !important;
+}
+
+.searchIcon
+{
+    background-image: url("../Images/Icons/SearchIcon.svg") !important;
+}
+
+.sortboxIcon
+{
+    background-image: url("../Images/Icons/SortboxIcon.svg") !important;
+}
+
+.sortIcon
+{
+    background-image: url("../Images/Icons/SortIcon.svg") !important;
+}
+
+.sortStraightIcon
+{
+    background-image: url("../Images/Icons/SortStraightIcon.svg") !important;
+}
+
+.trashIcon
+{
+    background-image: url("../Images/Icons/TrashIcon.svg") !important;
+}
+
+.userIcon
+{
+    background-image: url("../Images/Icons/UserIcon.svg") !important;
+}
+
+
+/* ------------------------------------- Icons END -------------------------------------------- */

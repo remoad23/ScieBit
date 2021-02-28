@@ -1,0 +1,704 @@
+/* ----------------------------------------- FormContainer START -------------------------------------------- */
+
+.formContainer
+{
+    display: flex;
+    width: 20vw;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 10%;
+    padding-top: 0;
+    border: 1px solid black;
+    background-color: #A4BCC4;
+    color: white;
+}
+
+.formContainer > h1
+{
+    font-size: 3.5vw;
+}
+
+.formContainer > input
+{
+    height: 1.5vw;
+    border: 2px solid #36506C;
+    width: 84%;
+}
+
+.formContainer > label
+{
+}
+
+.formContainer > label
+{
+    font-size: 1.6vw;
+    margin-top: 5%;
+}
+
+.authContainer
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 10%;
+    padding-top: 0;
+    background-color: #6F96A5;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid #36506C;
+}
+
+.authContainer > input
+{
+    height: 2.1vw;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #36506C;
+    margin-top: 1%;
+}
+
+.authContainer > label
+{
+    font-size: 1vw;
+    margin-top: 5%;
+}
+
+.authContainer > h1
+{
+    font-size: 2vw;
+}
+
+.authContainer > button
+{
+    background-color: #36506C;
+    border: 1px solid #192f46;
+    color: white;
+    transition: background-color 0.2s;
+}
+
+.authContainer > button:hover
+{
+    cursor: pointer;
+    background-color: #192f46;
+    color: white;
+}
+
+.containerBtn
+{
+    width: 40%;
+    background-color: white;
+    color: #A4BCC4;
+    border: 3px solid white;
+    font-weight: bold;
+    font-size: 1.2vw;
+    border-radius: 4px;
+    margin-top: 8%;
+    height: 2vw;
+}
+
+.formLinks
+{
+    width: 20vw;
+    height: 2vw;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 2;
+    padding-left: 10%;
+    padding-right: 10%;
+    align-items: center;
+}
+
+.formLinks > a
+{
+    color: #707070;
+    text-decoration: none;
+}
+
+
+.formWrap
+{
+    position: absolute;
+    top: 10vw;
+    left: 40%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.registerWrap
+{
+    top: 5vw;
+}
+
+.formTextarea
+{
+    width: 35vw;
+    height: 10vw;
+    resize: none;
+    border: 2px solid #6F96A5;
+}
+
+/* ----------------------------------------- FormContainer END -------------------------------------------- */
+
+/* ------------------------------------- ERROR Start -------------------------------------------------*/
+.errorContainer
+{
+    display: flex;
+    flex-flow: row;
+    margin-bottom: 5%;
+    border: 3px solid #de0000;
+    border-radius: 15px;
+    height: auto;
+    width: 24vw;
+    background-color: #ffe2e2;
+}
+
+.editError
+{
+    width: 86% !important;
+}
+
+.errorContainer > ul > li
+{
+    color: #de0000 !important;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.formError {
+    border: 3px solid red !important;
+}
+
+/* ------------------------------------- ERROR End -------------------------------------------------*/
+
+/* ----------------------------------------- RowContainers Start -------------------------------------------- */
+
+.rowContainer{
+
+}
+
+/* ----------------------------------------- RowContainers END -------------------------------------------- */
+
+
+
+.contactContainer
+{
+    padding: 0;
+    background-color: transparent;
+    color: #36506C;
+    width: 40%;
+    border: none;
+}
+
+
+.contactContainer > .containerBtn
+{
+    border: 0px solid #6F96A5;
+    color: white;
+    background-color: #6F96A5;
+    text-align: center;
+    transition: background-color 0.2s;
+}
+
+.contactContainer > .containerBtn:hover
+{
+    cursor: pointer;
+    background-color: #233142;
+}
+
+
+
+/* ------------------------------------- ModalArea Start -------------------------------------------- */
+
+.modalArea
+{
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* ------------------------------------- ModalArea END -------------------------------------------- */
+
+
+/* ------------------------------------- Icons Start -------------------------------------------- */
+
+.userIcon,.addFileIcon,.arrowIcon,.checkIcon,.crossIcon,.cloudIcon,.downloadIcon,.editIcon,.fileIcon,
+.folderIcon,.gearIcon,.homeIcon,.letterIcon,.letterIconBlue,.longarrowIcon,.plusIcon,.searchIcon,.playIcon,.searchIcon,
+.sortboxIcon,.sortIcon,.sortStraightIcon,.trashIcon,.powerIcon,.editIconWhite,.folderIconWhite,.userIconWhite,
+.searchIconWhite,.burgerMenuIcon,.worldIcon,.newNotificationIcon,.circleMenuIcon,.trashIconWhite,.editIconUser,.editIconAdmin
+{
+    height: 30px;
+    width: 26px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.dashboardContentWrapper > .fileIcon
+{
+    background-size: 50% !important;
+}
+
+.worldIcon
+{
+    background-image: url("../Images/Icons/WorldIcon.svg") !important;
+}
+
+.powerIcon
+{
+    background-image: url("../Images/Icons/LogOutIconWhite.svg") !important;
+}
+
+.addFileIcon
+{
+    background-image: url("../Images/Icons/AddFileIcon.svg") !important;
+}
+
+.arrowIcon
+{
+    background-image: url("../Images/Icons/ArrowIcon.svg") !important;
+}
+
+.checkIcon
+{
+    background-image: url("../Images/Icons/CheckIcon.svg") !important;
+}
+
+.cloudIcon
+{
+    background-image: url("../Images/Icons/CloudIcon.svg") !important;
+}
+
+.crossIcon
+{
+    background-image: url("../Images/Icons/CrossIcon_White.svg") !important;
+    transform: scale(0.9) !important;
+}
+
+.downloadIcon
+{
+    background-image: url("../Images/Icons/DownloadIcon.svg") !important;
+}
+
+.editIconWhite
+{
+    background-image: url("../Images/Icons/EditIconWhite.svg") !important;
+}
+
+.editIcon
+{
+    background-image: url("../Images/Icons/EditIcon.svg") !important;
+}
+
+.editIconUser{
+    background-image: url("../Images/Icons/EditIconUser.svg") !important;
+}
+
+.editIconAdmin{
+    background-image: url("../Images/Icons/EditIconAdmin.svg") !important;
+}
+
+.fileIcon
+{
+    background-image: url("../Images/Icons/FileIcon.svg") !important;
+}
+
+.folderIconWhite
+{
+    background-image: url("../Images/Icons/FolderIconWhite.svg") !important;
+}
+
+.folderIcon
+{
+    background-image: url("../Images/Icons/FolderIcon.svg") !important;
+}
+
+.gearIcon
+{
+    background-image: url("../Images/Icons/GearIcon.svg") !important;
+}
+
+.homeIcon
+{
+    background-image: url("../Images/Icons/HomeIconWhite.svg") !important;
+}
+
+.letterIcon
+{
+    background-image: url("../Images/Icons/LetterIconWhite.svg") !important;
+}
+
+.letterIconBlue
+{
+    background-image: url("../Images/Icons/LetterIcon.svg") !important;
+}
+
+.longarrowIcon
+{
+    background-image: url("../Images/Icons/LongArrowIcon.svg") !important;
+}
+
+.playIcon
+{
+    background-image: url("../Images/Icons/PlayIcon.svg") !important;
+}
+
+.plusIcon
+{
+    background-image: url("../Images/Icons/PlusIcon_White.svg") !important;
+}
+
+.searchIconWhite
+{
+    background-image: url("../Images/Icons/SearchIconWhite.svg") !important;
+}
+
+.searchIcon
+{
+    background-image: url("../Images/Icons/SearchIcon.svg") !important;
+}
+
+.sortboxIcon
+{
+    background-image: url("../Images/Icons/SortboxIcon.svg") !important;
+}
+
+.sortIcon
+{
+    background-image: url("../Images/Icons/SortIcon.svg") !important;
+}
+
+.sortStraightIcon
+{
+    background-image: url("../Images/Icons/SortStraightIcon.svg") !important;
+}
+
+.trashIcon
+{
+    background-image: url("../Images/Icons/TrashIcon.svg") !important;
+}
+
+.trashIconWhite
+{
+    background-image: url("../Images/Icons/TrashIconWhite.svg") !important;
+}
+
+.userIconWhite
+{
+     background-image: url("../Images/Icons/UserIconWhite.svg") !important;
+}
+
+.userIcon
+{
+       background-image: url("../Images/Icons/UserIcon.svg") !important;
+}
+
+.notificationIcon
+{
+    background-image: url("../Images/Icons/MessageIcon.svg") !important;
+}
+
+.newNotificationIcon
+{
+    background-image: url("../Images/Icons/NewMessageIcon.svg") !important;
+    height: 40px !important;
+    width: 44px !important;
+}
+
+.circleMenuIcon
+{
+    background-image: url("../Images/Icons/circleMenuIcon.svg") !important;
+    display: none;
+}
+
+.burgerMenuIcon
+{
+    background-image: url("../Images/Icons/HamburgerMenuIcon.svg") !important;
+}
+
+#burgerMenu
+{
+    display: none;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.logoIcon
+{
+    background-image: url("../Images/Icons/LogoIcon.svg") !important;
+    height: 70px;
+    width: 70px;
+    margin-right: 10%;
+    margin-top: 5%;
+    background-color: transparent!important;
+    background-repeat: no-repeat;
+    background-size: 100% !important;
+}
+
+/* ------------------------------------- Icons END -------------------------------------------- */
+
+/* -------------------------------------Media Query width < 1270  --------------------------------------------*/
+
+@media only screen and (max-width: 1270px) {
+
+/* -------------------------------------Layout Start  --------------------------------------------*/
+    .logoIcon {
+        width: 60% !important;
+        margin-right: 0% !important;
+    }
+/* -------------------------------------Layout End  --------------------------------------------*/
+
+/* -------------------------------------Contact Start  --------------------------------------------*/
+    .formContainer > input
+    {
+        height: 8%;
+        width: 60%;
+        border: 2px solid #6F96A5;
+    }
+
+    .formTextarea
+    {
+        width: 100%;
+        height: 60%;
+        resize: none;
+        border: 2px solid #6F96A5;
+    }
+
+    .containerBtn {
+        width: 23%;
+        font-size: 2vw;
+        height: 8%;
+    }
+
+    .formContainer > h1 {
+        font-size: 5.5vw;
+        margin-bottom: 3%;
+    }
+
+    .formContainer {
+        width: 80%;
+        height: 60vw;
+    }
+
+    .formContainer > label
+    {
+        font-size: 2vw;
+    }
+/* -------------------------------------Contact End  --------------------------------------------*/
+
+    .authContainer
+    {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        flex-direction: column;
+        padding: 10%;
+        padding-top: 0;
+        background-color: #6F96A5;
+        color: white;
+        border-radius: 10px;
+        border: 2px solid #36506C;
+    }
+
+    .authContainer > input
+    {
+        height: 3.5vw;
+        width: 100%;
+    }
+
+    .registerContainer > label
+    {
+        margin-top: 2% !important;
+    }
+
+    .authContainer > label
+    {
+        font-size: 2vw;
+        margin-top: 5%;
+    }
+
+    .authContainer > h1
+    {
+        font-size: 4vw;
+    }
+
+    .authContainer > button
+    {
+        width: 40%;
+        height: 4vw;
+    }
+
+    .formWrap
+    {
+        left: 30%;
+        width: 40%;
+    }
+
+    .registerWrap {
+        top: 8vw;
+    }
+
+    .formLinks
+    {
+        width: 40vw;
+        height: 4vw;
+    }
+
+
+/* -------------------------------------Error Start --------------------------------------------*/
+
+    .errorContainer {
+        width: 47vw;
+    }
+
+    .errorContainer > ul > li{
+        font-size: 1em;
+    }
+
+    .editError >ul > li
+    {
+       font-size: 0.7em;
+    }
+
+/* -------------------------------------Error End --------------------------------------------*/
+
+}
+
+/* -------------------------------------Media Query width < 800  --------------------------------------------*/
+
+@media only screen and (max-width: 800px) {
+
+/* -------------------------------------Layout Start --------------------------------------------*/
+
+    .logoIcon {
+        width: 30% !important;
+        margin-right: 10% !important;
+    }
+
+    #burgerMenu
+    {
+        display: block;
+        position: absolute;
+        left: 20px;
+        transform: scale(1.2);
+    }
+
+/* -------------------------------------Layout End  --------------------------------------------*/
+
+/* -------------------------------------Contact Start  --------------------------------------------*/
+
+    .formContainer > h1 {
+        font-size:9vw;
+    }
+
+    .formContainer > label
+    {
+        font-size: 4vw;
+    }
+
+    .formContainer > input
+    {
+        height: 9%;
+        width: 100%;
+    }
+
+    .formContainer {
+        width: 97%;
+        height: 100vw;
+    }
+
+    .formTextarea
+    {
+        width: 100%;
+        height: 60%;
+        resize: none;
+        border: 2px solid #6F96A5;
+    }
+
+    .containerBtn {
+        width: 40%;
+        font-size: 4vw;
+        height: 12%;
+    }
+
+/* -------------------------------------Contact End  --------------------------------------------*/
+
+/* ------------------------------------- Rights Start  --------------------------------------------*/
+
+    .circleMenuIcon
+    {
+        display: block;
+        width: 5vw;
+        height: 5vw;
+        margin-top: 80%;
+        margin-left: 2vw;
+        cursor: pointer;
+    }
+
+
+/* ------------------------------------- Rights End  --------------------------------------------*/
+
+    .formWrap {
+        left: 8%;
+        width: 70%;
+        top: 15%;
+    }
+
+    .registerWrap
+    {
+        top: 5vw;
+    }
+
+    .authContainer > h1 {
+        font-size: 6vw;
+    }
+
+    .authContainer > label {
+        font-size: 3.5vw;
+    }
+
+    .authContainer > input {
+        height: 6.5vw;
+    }
+
+    .authContainer > button {
+        width: 50%;
+        height: 7vw;
+    }
+
+    .formLinks {
+        width: 65vw;
+        height: 6vw;
+        font-size: 2.5vw;
+    }
+
+    /* -------------------------------------Error Start --------------------------------------------*/
+
+    .errorContainer {
+        width: 82vw;
+    }
+
+    .errorContainer > ul > li{
+        font-size: 1em;
+    }
+
+    .editError
+    {
+        width: 93% !important;
+    }
+
+    .editError >ul > li
+    {
+        font-size: 1.1em;
+    }
+
+    /* -------------------------------------Error End --------------------------------------------*/
+}

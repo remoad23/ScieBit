@@ -1,0 +1,416 @@
+
+.documentContainer
+{
+  width: 100%;
+}
+
+.documentTitle{
+  color: #36506C;
+}
+
+.documentContainerFiles
+{
+  width: 97%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 4%;
+  padding-top: 2%;
+  margin-bottom: 5vw;
+}
+
+.pathButtonElement
+{
+  pointer-events: none;
+  transition: 0.2s all;
+}
+
+.draggedOverPath
+{
+  transform: scale(1.1);
+  background-color: #bdbdf1;
+  border-radius: 10px;
+}
+
+.documentContainerSearchbar
+{
+  width: 100%;
+  height: 2.1vw;
+  margin-bottom: 1vw;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.searchBarIcon
+{
+  height: 1.5vw;
+  width: 2.5vw;
+  position: absolute;
+}
+
+#documentSeachbar
+{
+  width: 60%;
+  height: 100%;
+  border: 2px solid #36506C;
+  background-color: rgba(60,110,200,0.1);
+  border-radius: 5px;
+  color: #36506C;
+  padding-left: 3%;
+  z-index: 1;
+}
+
+.documentContainerTools
+{
+  width: 100%;
+  height: 3vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.rightContainerTool,.leftContainerTool
+{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.rightContainerTool > button, .leftContainerTool > button
+{
+  border: none;
+  background-color: transparent;
+}
+
+#sortByNameBtn, #sortByDateBtn
+{
+  height: 80%;
+  width: 2.6vw;
+  border: 2px solid #36506C;
+  border-radius: 20%;
+  transition: background-color 0.2s;
+  margin-left: 1vw;
+  color: #36506C;
+  font-size: 1vw;
+  font-weight: bold;
+}
+
+#sortByNameBtn:hover, #sortByDateBtn:hover
+{
+  background-color: #C6E5F3;
+  cursor: pointer;
+}
+
+.leftContainerTool
+{
+  width: 0;
+  font-weight: bold;
+  font-size: 1.2em;
+  justify-content: normal !important;
+}
+
+.rightContainerTool
+{
+  width: 90% !important;
+}
+
+.pathContainer
+{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.documentSections
+{
+  display: flex;
+  height: 3vw;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 1vw;
+}
+
+
+.documentSections > button
+{
+  height: 80%;
+  width: 16%;
+  border-radius: 10px;
+  border: none;
+  background-color: #233142;
+  font-weight: bold;
+  color: white;
+  font-size: 1.1vw;
+  outline: none;
+  transition: background-color 0.2s;
+}
+
+.documentSections > button:hover
+{
+  cursor:pointer;
+  background-color: #6F96A5;
+}
+
+
+.createDocumentFile
+{
+  position: absolute;height: 50%;width: 50%;border: 1px solid;padding-left: 2vw;padding-right: 2vw;top: 27%;
+  background-color: white;
+}
+
+.documentsettings
+{display: flex;flex-direction: row;justify-content: space-between;}
+
+.documentdetails
+{width: 40%;height: 20vh;display: flex;flex-direction: column;#707070: white;}
+
+.documentSharing
+{width: 40%;height: 20vh;display: flex;flex-direction: column;#707070: white;}
+
+.documentkeywords
+{
+  height: 20vh;
+  color: #707070;
+  width: 100%;
+}
+
+.keywords
+{display: flex;flex-direction: row;flex-wrap: wrap;width: 100%;}
+
+.keyword
+{height: 3vh;width: 7vw;border: 1px solid white;border-radius: 6%;
+  margin-right: 5%;display: flex;flex-direction: row;justify-content: space-evenly;align-items: center;margin-bottom: 2vh;}
+
+.documentHistoryTable
+{
+  position: absolute;
+  top: 20%;
+  width: 50% !important;
+  left: 25%;
+  border: 2px solid black !important;
+  background-color: white;
+}
+
+.documentHistoryTable > tbody > tr
+{
+  height: 6vh;
+}
+.addFileBtn
+{
+  height: 90px;
+  width: 90px;
+  position: sticky;
+  bottom: 5%;
+  top: 85%;
+  left: 90%;
+  background-color: #21EF88;
+  border-radius: 100%;
+  box-shadow: 5px 10px 8px #888888;
+  background-size: 65%;
+  transition: background-color 0.2s ,width 0.2s ,height 0.2s ,bottom 0.2s ,right 0.2s;
+}
+.addFileBtn:hover
+{
+  cursor: pointer;
+  background-color: #707070;
+  height: 100px;
+  width: 100px;
+}
+
+/* ------------------------------------------------- Files Start -------------------------------------------------*/
+
+:host
+{
+  width: 100%;
+  height: 56vh;
+  display: flex;
+  padding: 4%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.droplistGroupContainer
+{
+  height: 22vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.droplistMydocument
+{
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.cdk-drag-preview
+{
+  opacity: 0.8;
+}
+.cdk-drag-placeholder
+{
+  background-color: #C6E5F3;
+  display: none;
+}
+
+
+/* ------------------------------------------------- Files Ende -------------------------------------------------*/
+
+/* ------------------------------------- Interaction Start -------------------------------------------------*/
+
+.customInteraction{
+  height: 73%;
+  width: 2.5vw;
+  border: 2px solid #36506C;
+  border-radius: 20%;
+  transition: background-color 0.2s;
+  margin-left: 1vw;
+  background-size: 50%;
+  background-position: center;
+}
+
+.customInteraction:hover{
+  background-color: #C6E5F3;
+  cursor: pointer;
+}
+/* ------------------------------------- Interaction End -------------------------------------------------*/
+
+/* ------------------------------------- Media Query Width < 1720px -------------------------------------------------*/
+
+@media (max-width: 1720px){
+
+  #sortByNameBtn, #sortByDateBtn
+  {
+    font-size: 0.7vw;
+  }
+}
+
+/* ------------------------------------- Media Query Width < 1270px -------------------------------------------------*/
+
+@media (max-width: 1270px){
+
+  .documentContainerSearchbar {
+    height: 2.9vw;
+  }
+
+  #documentSeachbar
+  {
+    padding-left: 3.8%;
+  }
+
+  .searchBarIcon
+  {
+    height: 2.1vw;
+    width: 3.3vw;
+  }
+
+  .documentSections > button {
+    height: 80%;
+    width: 24%;
+    font-size: 1.6vw;
+  }
+
+  .documentSections
+  {
+    height: 5vw;
+  }
+
+  .documentContainerTools
+  {
+    height: 5vw;
+  }
+
+  .customInteraction{
+    width: 4vw;
+  }
+
+  #sortByNameBtn, #sortByDateBtn {
+    width: 4.3vw;
+    font-size: 1.3vw;
+  }
+}
+
+
+
+/* ------------------------------------- Media Query Width < 800px -------------------------------------------------*/
+
+@media (max-width: 800px){
+
+  .documentContainerSearchbar {
+    height: 7.2vw;
+    margin-bottom: 2.5vw;
+  }
+
+  .searchBarIcon {
+    height: 5.1vw;
+    width: 7.3vw;
+    position: absolute;
+  }
+
+  #documentSeachbar {
+    width: 100%;
+    height: 100%;
+    padding-left: 7.8%;
+    font-size: 3vw;
+  }
+
+  .documentSections > button {
+    height: 100%;
+    width: 30%;
+    font-size: 2.5vw;
+  }
+
+  .documentSections
+  {
+    height: 8vw;
+    margin-top: 4vw;
+  }
+
+  .documentContainerTools
+  {
+    height: 8vw;
+  }
+
+  .customInteraction{
+    width: 6.9vw;
+    height: 74%;
+  }
+
+  #sortByNameBtn, #sortByDateBtn {
+    width: 7.3vw;
+    font-size: 2.3vw;
+  }
+
+  .documentContainerFiles
+  {
+    margin-bottom: 37vw;
+  }
+
+}
+
+/* ------------------------------------- Media Query Width < 600px -------------------------------------------------*/
+
+@media (max-width: 600px){
+
+  .documentContainerTools
+  {
+    height: 10vw;
+  }
+
+  .customInteraction {
+    width: 8.4vw;
+    height: 72%;
+  }
+
+  #sortByNameBtn, #sortByDateBtn {
+    width: 9vw;
+    font-size: 2.8vw;
+  }
+
+}
+

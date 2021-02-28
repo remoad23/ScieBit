@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="ca9cd97aef459d66692362f1064944ea22e888cb" datatype="html">
+        <source>Delete File?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/drive/context/modalwindow/confirmdelete.component.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f2a6c3db5e979fb3160399291712451d728d79fb" datatype="html">
+        <source>Delete Folder?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/drive/context/modalwindow/confirmdelete.component.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="826b25211922a1b46436589233cb6f1a163d89b7" datatype="html">
+        <source>Delete</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/drive/context/modalwindow/confirmdelete.component.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/drive/context/modalwindow/confirmdelete.component.ts</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/drive/context/mousemenu.component.ts</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d7b35c384aecd25a516200d6921836374613dfe7" datatype="html">
+        <source>Cancel</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/drive/context/modalwindow/confirmdelete.component.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/drive/context/modalwindow/share.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/drive/context/modalwindow/uploadfile.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/drive/context/modalwindow/uploadfolder.component.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/drive/context/modalwindow/sharefolder.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/drive/context/modalwindow/versions.component.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/drive/context/modalwindow/editfile.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3f81de122a2eeb737d5aa880743519eb2fe5b4bd" datatype="html">
+        <source>Share File</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/drive/context/modalwindow/share.component.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="244aae9346da82b0922506c2d2581373a15641cc" datatype="html">
+        <source>Email</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/drive/context/modalwindow/share.component.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/drive/context/modalwindow/sharefolder.component.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d672f8789a6e7a04ddfcf953083ea66d3014a5da" datatype="html">
+        <source>examplemail@...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/drive/context/modalwindow/share.component.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/drive/context/modalwindow/sharefolder.component.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0bd8b27f60a1f098a53e06328426d818e3508ff9" datatype="html">
+        <source>Share</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/drive/context/modalwindow/share.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/drive/context/modalwindow/sharefolder.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/drive/context/mousemenu.component.ts</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="20bfb927a41594dfb6b29588ba17981f10eec9f8" datatype="html">
+        <source>Upload File</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/drive/context/modalwindow/uploadfile.component.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/drive/context/mousemenu.component.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="48139a8f408fb79f24e82673e89e23c2ac314f23" datatype="html">
+        <source>File</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/drive/context/modalwindow/uploadfile.component.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1f335b381271e2cc422d3b9e3c40ba794d19da4e" datatype="html">
+        <source>Keywords</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/drive/context/modalwindow/uploadfile.component.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/drive/context/modalwindow/editfile.component.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bee1fb08fc4cb8b855a1ccc302680ee728278358" datatype="html">
+        <source>Add Keyword...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/drive/context/modalwindow/uploadfile.component.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/drive/context/modalwindow/uploadfile.component.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/drive/context/modalwindow/editfile.component.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/drive/context/modalwindow/editfile.component.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="54305f285319f935eef967e729eeebbbb5a05ea1" datatype="html">
+        <source>Keyword already exists!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/drive/context/modalwindow/uploadfile.component.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/drive/context/modalwindow/editfile.component.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="33b2ce58867a810a6c3796af074772b09497a721" datatype="html">
+        <source>Limited to 5 keywords!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/drive/context/modalwindow/uploadfile.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/drive/context/modalwindow/editfile.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4b3972c3e9485218508a95f7a4ce7758e3f09ced" datatype="html">
+        <source>Upload</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/drive/context/modalwindow/uploadfile.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/drive/context/modalwindow/uploadfolder.component.ts</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1f65d51a247a12542db972f79018ea1bfc3ee03d" datatype="html">
+        <source>Upload Folder</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/drive/context/modalwindow/uploadfolder.component.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/drive/context/mousemenu.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d8e057d4fa08fbdb6f98af2073eff5ae0b47f5e1" datatype="html">
+        <source>Folder</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/drive/context/modalwindow/uploadfolder.component.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7899b52d14cc29082743692f8d5343ea5d6bb5ba" datatype="html">
+        <source>Share Folder</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/drive/context/modalwindow/sharefolder.component.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/drive/context/mousemenu.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f59b15c24ab2834b2958a17da3f0a8eb141c5aea" datatype="html">
+        <source>Version Control</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/drive/context/modalwindow/versions.component.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/drive/context/mousemenu.component.ts</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="52c9a103b812f258bcddc3d90a6e3f46871d25fe" datatype="html">
+        <source>Save</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/drive/context/modalwindow/versions.component.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/drive/context/modalwindow/editfile.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="adc2ae64df1b4a048fa567749afcd944661eb1ec" datatype="html">
+        <source>Edit File</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/drive/context/modalwindow/editfile.component.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/drive/context/mousemenu.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="56b5044b468ec079b4881a470e9b00b35a24db54" datatype="html">
+        <source>Filename</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/drive/context/modalwindow/editfile.component.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0fcc484c0af37bf70e9f537d8d8f2bf3f614d99c" datatype="html">
+        <source>Delete Folder</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/drive/context/mousemenu.component.ts</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9553ab927278db0573e4a0f102be94a1d843eb57" datatype="html">
+        <source>
+        Other Versions: <x id="INTERPOLATION" equiv-text="{{file.fileDetails.version_count}}"/><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>
+      </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/drive/context/filedetails.component.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="299a640df3b037785e1800699c10624c34ff4dfd" datatype="html">
+        <source>
+        Owner: <x id="INTERPOLATION" equiv-text="{{file.fileDetails.ownername}}"/>
+      </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/drive/context/filedetails.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dc75033a5238fdc4f462212c847a45ba8018a3fd" datatype="html">
+        <source>Download</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/drive/context/interaction.component.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9f106082ef7dcf262ac069210617d3142818b6c7" datatype="html">
+        <source>My Documents</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d1896fce0c3aa3f0e0a59db03c73344a007f875a" datatype="html">
+        <source>Shared Documents</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d8195609ef6a3ddfee0a66ccf7b085ba645462cc" datatype="html">
+        <source>Department Documents</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8aa58cf00d949c509df91c621ab38131df0a7599" datatype="html">
+        <source>Search...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="234598e408f042c0291c6bd4b7735407de41f8c4" datatype="html">
+        <source> </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="714080cc448b0d868092a796ae5188d812911fce" datatype="html">
+        <source>Departments</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4f8b2bb476981727ab34ed40fde1218361f92c45" datatype="html">
+        <source>Details</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cff1428d10d59d14e45edec3c735a27b5482db59" datatype="html">
+        <source>Name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="09c3d8dca68f757aec322440b75f686a1e2c2322" datatype="html">
+        <source>Persons</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="856d4f9f808e2d113350ef83739857221c63adaf" datatype="html">
+        <source>Keyword</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2f933b826a570836cab04f683970a2d22068458c" datatype="html">
+        <source>Date</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="28f86ffd419b869711aa13f5e5ff54be6d70731c" datatype="html">
+        <source>Edit</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

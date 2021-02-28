@@ -1,0 +1,510 @@
+html {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+/* --------------------------------------------HEADER START ------------------------------------------------------*/
+
+header {
+    background-color: #D9E0E2;
+    height: 6vh;width: 100%;
+    display: flex;justify-content: flex-end;
+    align-items: center;
+}
+
+header > p
+{
+    font-size: 20px;
+    height: 50%;
+    margin: 0;
+    margin-right: 2%;
+}
+
+#loggedUserImg
+{
+    height: 100%;
+    width: 3%;
+    margin-right: 2%;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+
+#userImg
+{
+    height: 68%;
+    width: 80%;
+    background-color: white;
+    border-radius: 50%;
+    transform: scale(1) !important;
+    background-size: 70% !important;
+}
+
+#headerOptions
+{
+    z-index: 2;
+    background-color: #D9E0E2;
+    position: absolute;
+    top: 4%;
+    right: 2%;
+    width: 15%;
+    height: 18%;
+    font-size: 1.1em;
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transition-duration: 0.3s;
+    opacity: 0;
+    padding-left: 0;
+}
+
+#headerOptions > li
+{
+    padding-left: 14%;
+    height: 32%;
+    display: flex;
+    align-items: center;
+    width: 86%;
+    transition: background-color 0.1s;
+}
+
+#headerOptions > li > a
+{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    transition: color 0.2s;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+#headerOptions > li > a > i
+{
+    margin-right: 5%;
+    background-size: 80%;
+    transform: scale(1.5);
+}
+
+#headerOptions > li:hover
+{
+    background-color: #1B2133;
+}
+
+#loggedUserImg:hover #header#headerOptions
+{
+    display: flex;
+    opacity: 1;
+}
+
+
+/* --------------------------------------------HEADER END ------------------------------------------------------*/
+
+
+/* --------------------------------------------ASIDE START ------------------------------------------------------*/
+aside{
+    background-color: #1B2133;
+    height: 106vh;
+    width: 16%;
+    display: flex;
+    margin-top: -6vh;
+    flex-direction: column;
+}
+
+#logoContainer
+{
+    width:100%;
+    height: 10vh;
+    margin-bottom: 10%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    margin-left: 8%;
+    margin-top: 8%;
+    font-size: 1.5em;
+}
+
+aside > ul {
+    margin-bottom: 5%;
+    font-size: 1.25em;
+    height: 12%;
+
+}
+
+aside > ul > li:hover a
+{
+    color: #2984B7;
+}
+
+aside > ul > li > a > i
+{
+    margin-right: 6%;
+}
+
+/* --------------------------------------------ASIDE END ------------------------------------------------------*/
+
+
+/* --------------------------------------------FOOTER START ------------------------------------------------------*/
+
+footer{
+    background-color: #1B2133;
+    height: 45vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.list
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90%;
+    width: 50%;
+    margin-left: 42%;
+    margin-right: 8%;
+}
+
+#copyrightText
+{
+    text-align: center;
+    color: white;
+    align-self: center;
+    width: 100%;
+    height: 5%;
+}
+
+.footerList
+{
+    height: 46%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.footerList  > li > a:hover
+{
+    color: #2984B7;
+}
+
+/* --------------------------------------------FOOTER END ------------------------------------------------------*/
+
+/* --------------------------------------------MAIN START ------------------------------------------------------*/
+
+main{
+    background-color: lightcyan;
+    width: 80%;
+}
+
+.main-wrap
+{
+    height: 85%;
+    width: 90%;
+    background-color: white;
+    padding: 5%;
+}
+
+/* --------------------------------------------MAIN END ------------------------------------------------------*/
+
+/* --------------------------------------------GENERAL START ------------------------------------------------------*/
+
+ul > li
+{
+    color: white;
+    font-size: 1.3em;
+    list-style-type: none;
+    width: 100%;
+    height: 33.33%;
+    transition: color 0.2s;
+}
+
+li > a
+{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    transition: color 0.2s;
+}
+
+
+
+/* --------------------------------------------GENERAL END ------------------------------------------------------*/
+
+/* --------------------------------------------Dashboard Start ------------------------------------------------------*/
+
+.dashboard{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.dashboardWrap
+{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+
+.dashboardUser
+{
+
+}
+
+.dashboardContent
+{width: 100%;}
+
+.dashboardContent > h1
+{
+    color: #D2C5C5;
+}
+
+.dashboardNews > h1
+{
+    color: #D2C5C5;
+}
+
+.dashboardContentWrapper
+{width: 100%;display: flex;flex-wrap: wrap;flex-direction: row;}
+
+.dashboardElement
+{
+    width: 6vw !important;
+    height: 12vh !important;
+    margin-right: 5%;
+    border: 3px solid #707070;
+    margin-bottom: 5%;
+    background-size: 60% !important;
+}
+
+.dashboardNews
+{
+    width: 35%;
+}
+
+.newsContainer
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.newsContent
+{
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    width: 100%;
+    background-color: #D9E0E2;
+    margin-bottom: 6px;
+}
+
+.newsIMG
+{
+    width: 25% !important;
+    height: 100% !important;
+    background-size: 40% !important;
+    background-position: center;
+}
+
+.newsText
+{
+    width: 75%;
+    height: 100%;
+    color: white;
+    padding: 5%;
+    margin: 0 auto;
+}
+
+.userIconDashboard
+{
+    height: 20vh !important;
+    border: solid 5px #D2C5C5 !important;
+    width: 10vw !important;
+    border-radius: 50%;
+    transform: scale(1) !important;
+    background-size: 70% !important;
+}
+
+/* --------------------------------------------Dashboard END ------------------------------------------------------*/
+
+
+/* --------------------------------------------User Start -----------------------------------------------------------*/
+
+.profileHeader
+{width: 100%;height: 20%;display: flex;flex-direction: row;align-items: center;font-size: 1.5em;color: #D2C5C5;}
+
+.profileIMG
+{
+    width: 9vw !important;
+    height: 16vh !important;
+    margin-right: 4%;
+    border-radius: 50%;
+    transform: scale(1) !important;
+    border: 1px solid;
+    background-size: 60% !important;
+
+}
+
+.profileInformation
+{
+    margin-top: 5vh;
+    height: 60%;
+    width: 100%;
+    color: #D2C5C5;
+}
+
+.userInformationDetails,.userInformationOutput
+{
+    height: 100%;
+    width: 30%;
+}
+
+.userInformationOutput
+{
+    width: 40%;
+}
+
+.informationDetailsWrap
+{
+    height: 60%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+/* --------------------------------------------User END -------------------------------------------------------------*/
+
+/* ------------------------------------- ERROR Start -------------------------------------------------*/
+.errorContainer
+{
+    display: flex;
+    flex-flow: row;
+    background-color:#233142;
+    border: 2px solid;
+    border-radius: 15px;
+    height: 5vh;
+    width: 10vw;
+}
+/* ------------------------------------- ERROR End -------------------------------------------------*/
+
+/* ------------------------------------- Validation Start -------------------------------------------------*/
+
+input:required{
+    border: 2px solid red;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+input:valid {
+    border: 2px solid green;
+}
+
+textarea:required{
+    border: 2px solid red;
+}
+
+textarea:invalid {
+    border: 2px solid red;
+}
+
+textarea:valid {
+    border: 2px solid green;
+}
+
+
+/* ------------------------------------- Validation End -------------------------------------------------*/
+
+
+/* --------------------------------------------Table START ----------------------------------------------------------*/
+
+.generalTable
+{
+    width: 100%;
+    color: #8F9294;
+    border:0;
+    border-collapse:separate;
+    border-spacing:0 5px;
+}
+
+.generalTable > tbody > tr > td:first-child
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+th
+{
+    font-size: 1.5em;
+    border-bottom: 2px solid #A4BCC4;
+}
+
+td
+{
+    text-align: center;
+}
+
+.checkboxTable
+{width: 2vw;}
+
+.tableProfileIMG
+{height: 7vh;width: 4vw;}
+
+
+.pagination
+{
+    margin-top: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.paginationCenter
+{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    justify-content: space-evenly;
+    font-size: 1.15em;
+    align-items: center;
+}
+
+#arrowLeft
+{
+    transform: rotate(90deg);
+}
+
+#arrowRight
+{
+    transform: rotate(-90deg)
+}
+
+.paginationCenter > a
+{
+    text-decoration: none;
+}
+
+.departmentWrapper
+{
+    display: flex;
+}
+
+.departmentCircle
+{
+
+}
+
+/* -------------------------------------------------Table END ------------------------------------------------*/

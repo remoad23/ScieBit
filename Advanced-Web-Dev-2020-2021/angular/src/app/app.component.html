@@ -1,0 +1,100 @@
+<h1 class="documentTitle" *ngIf="router.url.startsWith('/my')" i18n>My Documents</h1>
+<h1 class="documentTitle" *ngIf="router.url.startsWith('/shared')" i18n>Shared Documents</h1>
+<h1 class="documentTitle" *ngIf="router.url.startsWith('/department')" i18n>Department Documents</h1>
+<div class="documentContainer" #documentcontainer (click)="destroyMouseMenu()" (contextmenu)="openMouseMenu($event)" >
+  <div class="documentContainerSearchbar">
+    <i class="searchIcon searchBarIcon"></i>
+    <input id="documentSeachbar" [(ngModel)]="searchText" (ngModelChange)="searchFiles()" i18n-placeholder placeholder="Search..." type="text">
+  </div>
+  <hr>
+  <div class="documentContainerTools">
+    <div class="leftContainerTool">
+
+    </div>
+    <div class="rightContainerTool">
+      <interaction [MouseMenu]="false" (click)="createFile()" i18n-text class="customInteraction addFileIconBlue"
+                   *ngIf="!router.url.startsWith('/shared')" text=" " [iconClass]="'cloudIcon'" ></interaction>
+      <interaction [MouseMenu]="false" (click)="createFolder()" i18n-text class="customInteraction addFolderIcon"
+                   *ngIf="!router.url.startsWith('/shared')" text=" " [iconClass]="'folderIcon'" ></interaction>
+      <interaction [MouseMenu]="false" (click)="download()" i18n-text class="customInteraction downloadIcon"
+                   *ngIf="fileOrFolderSelected" url="" text=" " [iconClass]="'downloadIcon'" ></interaction>
+      <interaction [MouseMenu]="false" (click)="delete()" i18n-text class="customInteraction trashIcon"
+                   *ngIf="fileOrFolderSelected && !router.url.startsWith('/shared/folder')" text=" " [iconClass]="'trashIcon'" ></interaction>
+      <interaction [MouseMenu]="false" (click)="shareSelected()" i18n-text class="customInteraction shareIcon"
+                   *ngIf="fileOrFolderSelected && router.url.startsWith('/my')" text=" " [iconClass]="'folderIcon'" ></interaction>
+      <button id="sortByNameBtn" (click)="sortByName()">A-Z</button>
+      <button id="sortByDateBtn" (click)="sortByDate()">0-9</button>
+    </div>
+  </div>
+  <div class="documentSections">
+    <button id="myButton" #myButton (click)="currentPath = [];currentPath.push({url: 'my', name: myButton.innerHTML})" routerLink="my" i18n>My Documents</button>
+    <button id="shareButton" #sharedButton (click)="currentPath = [];currentPath.push({url: 'shared', name: sharedButton.innerHTML})" routerLink="shared" i18n>Shared Documents</button>
+    <button #departmentButton (click)="currentPath = [];currentPath.push({url: 'department', name: departmentButton.innerHTML})" routerLink="department" i18n>Departments</button>
+  </div>
+  <div class="documentContainerFiles">
+    <div class="pathContainer">
+      <pathbutton (dragenter)="$event.stopPropagation();dragEnter($event,path.url)" (dragleave)="dragLeave($event)" (dragover)="allowDrop($event)"
+                  *ngFor="let path of currentPath" [name]="path.name" [url]="path.url" class="pathButtonElement">
+      </pathbutton>
+    </div>
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+<div class="modalArea">
+  <div class="createDocumentFile">
+    <h1 i18n>Upload File</h1>
+    <div class="documentsettings">
+      <div class="documentdetails">
+        <h2 i18n>Details</h2>
+        <label i18n>File</label>
+        <input type="text">
+        <label i18n>Name</label>
+        <input type="text">
+      </div>
+      <div class="documentSharing">
+        <h2 i18n>Share</h2>
+        <label i18n>Persons</label>
+        <input type="text">
+        <label i18n>Departments</label>
+        <input type="text">
+      </div>
+    </div>
+    <div class="documentkeywords">
+      <h2 i18n>Keywords</h2>
+      <div class="keywords">
+        <div class="keyword">
+          <p i18n>Keyword</p>
+          <i class="fa fa-file"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <table class="generalTable documentHistoryTable">
+    <thead>
+    <tr>
+      <th></th>
+      <th i18n>Filename</th>
+      <th i18n>Date</th>
+      <th i18n>Edit</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>
+        <div class="checkboxTableWrap">
+          <input class="checkboxTable" type="checkbox">
+        </div>
+      </td>
+      <td>Placeholder2</td>
+      <td>Placeholder3</td>
+      <td>
+        <i class="fa fa-file"></i>
+        <i class="fa fa-file"></i>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+

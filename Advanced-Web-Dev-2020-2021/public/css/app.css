@@ -1,0 +1,1812 @@
+html {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+/* --------------------------------------------HEADER START ------------------------------------------------------*/
+
+header {
+    background-color: #36506C;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+}
+
+header > p
+{
+    font-size: 1.5em;
+    height: 50%;
+    margin: 0;
+    margin-right: 2%;
+    color: white;
+    font-weight: 100;
+    max-width: 20%;
+    overflow: hidden;
+}
+
+#loggedUserImg
+{
+    height: 100%;
+    width: 200px;
+    margin-right: 2%;
+    align-items: center;
+    display: flex;
+}
+
+#userImg
+{
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: solid 3px white;
+    transform: scale(0.7) !important;
+    background-size: 70% !important;
+    cursor: pointer;
+}
+
+#headerOptions
+{
+    right: 0% !important;
+}
+
+#headerNotificationList
+{
+    width: 18% !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    max-height: 70vh !important;
+}
+
+#headerOptions, #headerNotificationList
+{
+    z-index: 2;
+    background-color: #36506C;
+    position: absolute;
+    top: 46px;
+    right: 5%;
+    width: 15%;
+    font-size: 0.9em;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    transition-duration: 0.3s;
+    opacity: 0;
+    padding-left: 0;
+    border: solid 1px white;
+}
+
+
+.crossNotification
+{
+    border: none;
+    background-color: transparent;
+}
+
+.crossNotification:hover
+{
+    cursor: pointer;
+}
+
+.headerNav
+{
+    height: 100%;
+    display: flex;
+    width: 100%;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#headerOptions > li , #headerNotificationList > li
+{
+    padding-left: 10%;
+    height: 60px;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    transition: background-color 0.1s;
+}
+
+#headerNotificationList > li {
+    padding-left: 7.6% !important;
+    width: 93% !important;
+    cursor: pointer;
+}
+
+#headerOptions > li:nth-child(even) , #headerNotificationList > li:nth-child(even)
+{
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+}
+
+#headerOptions > li:last-child , #headerNotificationList > :last-child
+{
+    border-bottom: none !important;
+}
+
+#headerOptions > li > a
+{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    transition: color 0.2s;
+    width: 90%;
+    height: 100%;
+    align-items: center;
+    font-size: 90%;
+}
+
+#headerNotificationList > li > a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    transition: color 0.2s;
+    width: 85%;
+    height: 100%;
+    align-items: center;
+    font-size: 90%;
+}
+
+#headerOptions > li > a > i
+{
+    margin-right: 5%;
+    background-size: 80%;
+    transform: scale(1.5);
+}
+
+#headerNotificationList > li > a > i
+{
+    margin-right: 5%;
+    background-size: 80%;
+    transform: scale(1.2);
+}
+
+#headerOptions > li:hover, #headerNotificationList > li:hover
+{
+    background-color: #1B2133;
+}
+
+#notificationPlusIcon
+{
+    margin-right: 3%;
+}
+
+.headerNotification
+{
+    height: 50px;
+    width: 50px;
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position: center;
+    align-self: center;
+    cursor: pointer;
+}
+
+#NotificationContainer
+{
+    list-style-type: none;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* --------------------------------------------HEADER END ------------------------------------------------------*/
+
+
+/* --------------------------------------------ASIDE START ------------------------------------------------------*/
+
+.asideMainTable
+{
+    display: table;
+    min-height: 940px;
+}
+
+aside{
+    background-color: #233142;
+    width: 250px;
+    flex-direction: column;
+    z-index: 3;
+    box-shadow: 3px 0px 20px #233142;
+    display: table-cell;
+    position: relative;
+    min-height: 700px;
+    min-width: 250px;
+    vertical-align: top;
+}
+
+#logoContainer
+{
+    width: 90%;
+    height: 120px;
+    margin-bottom: 30px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    margin-left: 9px;
+    margin-top: 15px;
+    font-size: 150%;
+    align-items: center;
+    justify-content: center;
+}
+
+aside > ul {
+    margin-bottom: 15px;
+    font-size: 1.25em;
+    height: 160px;
+    margin-left: -17px;
+
+}
+
+aside > ul > li:hover a
+{
+    color: #2984B7;
+}
+
+aside > ul > li > a > i
+{
+    margin-right: 8%;
+}
+
+/* --------------------------------------------ASIDE END ------------------------------------------------------*/
+
+
+/* --------------------------------------------FOOTER START ------------------------------------------------------*/
+
+footer{
+    background-color: #233142;
+    height: 165px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 4;
+    position: relative;
+}
+
+.list
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: 80%;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 8%;
+    margin-top: 0.7%;
+}
+
+#copyrightText
+{
+    text-align: center;
+    color: white;
+    align-self: center;
+    width: 100%;
+    height: 5%;
+    margin-top: -0.3%;
+}
+
+.footerList
+{
+    height: 46%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.footerList > h1
+{
+    font-size: 1.6em;
+}
+
+.footerList  > li > a:hover
+{
+    color: #2984B7;
+}
+
+/* --------------------------------------------FOOTER END ------------------------------------------------------*/
+
+/* --------------------------------------------MAIN START ------------------------------------------------------*/
+
+main{
+    background-color: white;
+    width: 100vw;
+    display: table-cell;
+    min-width: 350px;
+}
+
+.main-wrap
+{
+    width: 90%;
+    background-color: white;
+    padding: 5%;
+    margin-top: 60px;
+}
+
+/* --------------------------------------------MAIN END ------------------------------------------------------*/
+
+/* --------------------------------------------GENERAL START ------------------------------------------------------*/
+
+ul > li
+{
+    color: white;
+    font-size: 100%;
+    list-style-type: none;
+    width: 100%;
+    height: 33.33%;
+    transition: color 0.2s;
+}
+
+li > a
+{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: color 0.2s;
+}
+
+
+
+/* --------------------------------------------GENERAL END ------------------------------------------------------*/
+
+/* --------------------------------------------Dashboard Start ------------------------------------------------------*/
+
+.dashboard{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.dashboardWrap
+{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+
+.dashboardUser
+{
+
+}
+
+.dashboardContent
+{
+    width: 100%;
+}
+
+.dashboardContent > h1
+{
+    color: #36506C;
+    font-size: 2vw;
+}
+
+.dashboardNews > h1
+{
+    color: #36506C;
+    font-size: 3vw;
+}
+
+.dashboardContentWrapper
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 5vh;
+}
+
+.dashboardElement
+{
+    width: 6vw !important;
+    height: 7vw !important;
+    margin-right: 5%;
+    border: 3px solid #36506C;
+    margin-bottom: 5%;
+    background-size: 60% !important;
+    text-decoration: none;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.dashboardElementCircle{
+    border-radius: 50%;
+    border: 1px solid #36506C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2vw;
+    color: #36506C;
+}
+
+.dashboardNews
+{
+    width: 35%;
+}
+
+.newsContainer
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.newsContent
+{
+    display: flex;
+    flex-direction: row;
+    height: 3.7vw;
+    width: 100%;
+    background-color: #36506C;
+    margin-bottom: 1%;
+    transition: 0.1s background-color;
+    text-decoration: none;
+}
+
+.newsContent:hover
+{
+    background-color: #1B2133;
+}
+
+.newsIMG
+{
+    width: 20% !important;
+    height: 100% !important;
+    background-size: 35% !important;
+    background-position: center;
+}
+
+.newsText
+{
+    width: 75%;
+    height: 100%;
+    color: white;
+    padding: 5%;
+    margin: 0 auto;
+    font-size: 1vw;
+}
+
+.userIconDashboard
+{
+    height: 11vw !important;
+    border: solid 3px #36506C !important;
+    width: 10vw !important;
+    transform: scale(1) !important;
+    background-size: 70% !important;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.usernameDashboard
+{
+    color: #36506C;
+    align-self: center;
+    font-size: 3vw;
+    margin-left: 2vw;
+}
+/* --------------------------------------------Dashboard END ------------------------------------------------------*/
+
+
+/* --------------------------------------------User Start -----------------------------------------------------------*/
+
+.profileHeader
+{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.5em;
+    color: #36506C;
+}
+
+.profileHeader > h1
+{
+    font-size: 3vw;
+}
+
+.profileIMG
+{
+    width: 8vw !important;
+    height: 9vw !important;
+    margin-right: 4%;
+    transform: scale(1) !important;
+    border: 3px solid;
+    background-size: 60% !important;
+    object-fit: cover;
+}
+
+.profileInformation
+{
+    margin-top: 2%;
+    width: 39%;
+    color: #D2C5C5;
+    height: 40%;
+}
+
+.userInformationDetails,.userInformationOutput
+{
+    width: 30%;
+    font-size: 1.2em;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+}
+
+.userInformationOutput > label
+{
+    color: #233142;
+    margin-top: 4%;
+}
+
+.userInformationOutput
+{
+    width: 100%;
+}
+
+.informationDetailsWrap
+{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.inputTextForm
+{
+    display: flex;
+    background-color: #EBF7FD;
+    border: 2px solid #36506C;
+    height: 1.5vw;
+    width: 25vw;
+    padding: 10px;
+    font-size: 0.8em;
+    min-width: 200px;
+    color: #233142;
+}
+
+/* --------------------------------------------User END -------------------------------------------------------------*/
+/* --------------------------------------------Table START ----------------------------------------------------------*/
+
+.generalTable
+{
+    width: 100%;
+    color: #36506C;
+    border:0;
+    border-collapse:collapse;
+    border-spacing:0 5px;
+}
+
+th
+{
+    font-size: 1.6vw;
+    border-bottom: 3px solid #A4BCC4;
+}
+
+td
+{
+    text-align: center;
+    font-size: 0.9vw;
+    height: 3.3vw;
+}
+
+th:last-child
+{
+    max-width: 4vw;
+}
+
+tr
+{
+    border-bottom: 1px solid #A4BCC4;
+}
+
+td > form
+{
+    height: 0vw;
+}
+
+td > form > select
+{
+    width: 4.2vw;
+    height: 1.5vw;
+    font-size: 0.8vw;
+    margin-top: -0.3vw;
+}
+
+.tableProfileIMG
+{
+    height: 3.6vw;
+    width: 3.4vw;
+    object-fit: cover;
+}
+
+.nameTableProfile
+{
+    text-decoration: none;
+}
+
+.pagination
+{
+    margin-top: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.paginationCenter
+{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    justify-content: space-evenly;
+    font-size: 1.15em;
+    align-items: center;
+}
+
+#arrowLeft
+{
+    transform: rotate(90deg);
+}
+
+#arrowRight
+{
+    transform: rotate(-90deg)
+}
+
+.paginationCenter > a
+{
+    text-decoration: none;
+}
+
+.departmentWrapper
+{
+    display: flex;
+    height: 2vw;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.departmentCircle
+{
+    height: 2.4vw;
+    width: 2.4vw;
+    border: 3px solid white;
+    border-radius: 100%;
+    margin-left: -4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1em;
+}
+
+.circleFinance
+{
+    background-color: green !important;
+}
+
+.circleControlling
+{
+    background-color: red !important;
+}
+
+.circleDevelopment
+{
+    background-color: blue !important;
+}
+
+.circleMarketing
+{
+    background-color: orange !important;
+}
+
+.circleHumanResources
+{
+    background-color: grey !important;
+}
+
+.departmentSelectContainer
+{
+    width: 61%;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.editUserContainer
+{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+
+.editIconImage {
+    height: 20% !important;
+    width: 20% !important;
+    background-color: #36506C;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 2;
+    margin-left: 76%;
+    border: 2px solid;
+    margin-top: 87%;
+    background-size: 80% !important;
+}
+
+.editIconImage:hover
+{
+    cursor: pointer;
+}
+
+.imageInput
+{
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.departmentSelectColumn
+{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.departmentSelectColumn > h1 {
+    color: #A4BCC4;
+    font-size: 2.5vw;
+}
+
+.departmentSelectRow
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.selectContainer
+{
+    background-color: #D9E0E2;
+    border-radius: 8px;
+    height: 18vw;
+    display: flex;
+    flex-flow: column;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.selectableDepartment
+{
+    align-items: center;
+    background-color: grey;
+    border-radius: 15px;
+    width: 100%;
+    display: flex;
+    height: 14.8%;
+    flex-flow: row;
+    justify-content: space-evenly;
+    margin-top: 4%;
+    font-size: 0.9em;
+}
+
+.selectableDepartment > p
+{
+    width: 80%;
+    font-size: 1.7vw;
+    color: white;
+    text-align: center;
+}
+
+.closeSelectable
+{height: 100%;width: 20%;background-color: blue;background-size: contain !important;}
+
+.addSelectable.plusIcon {
+    height: 50%;
+    width: 10%;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    align-self: center;
+}
+
+.closeSelectable.crossIcon
+{
+    height: 50%;
+    width: 10%;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    align-self: center;
+}
+
+.saveSelectableDepartmentsBtn
+{
+    border-radius: 10px;
+    border: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 13px;
+    color: white;
+    background-color: #21EF88;
+    margin-top: 2vh;
+    transition: 0.2s background-color;
+}
+
+.saveSelectableDepartmentsBtn:hover
+{
+    background-color:#A4BCC4;
+    cursor: pointer;
+}
+
+.editColumn
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row;
+    margin-top: 1.2vw;
+}
+
+.trashEditTable
+{
+    border: none !important;
+    background-color: transparent;
+    width: 1vw !important;
+    height: 2vw !important;
+    margin: auto;
+    margin-left: 56%;
+    cursor: pointer;
+}
+
+.editIconEdiTable
+{
+    background-size: contain !important;
+    height: 2vw !important;
+    width: 1.1vw !important;
+    transform: scale(1.1);
+}
+
+.circleMenu
+{
+    display: none;
+    flex-direction: column;
+    position: relative;
+    left: -28vw;
+    width: 26vw;
+    height: 20vw;
+    background-color: #36506C;
+    justify-content: space-evenly;
+    color: white;
+    border-radius: 5%;
+    box-shadow: 0px 0px 4px #36506C;
+    overflow: hidden;
+}
+
+.showCircleMenu
+{
+    display: flex !important;
+}
+
+.circleMenuOption
+{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    font-size: 3vw;
+    display: flex;
+    align-items: center;
+    text-decoration: none !important;
+    color: white;
+    margin-bottom: 0;
+}
+
+.circleMenuOption:first-child
+{
+    border-bottom: 2px solid #233142;
+}
+
+.circleMenuOption:hover
+{
+    background-color: #233142;
+}
+
+.circleMenu > form > input
+{
+    background: none!important;
+    border: none;
+    padding: 0 !important;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    pointer-events: none;
+    font-size: 3vw;
+}
+
+.circleMenuRowIcon
+{
+    margin-right: 5%;
+    margin-left: 10%;
+    width: 21% !important;
+    height: 44% !important;
+    pointer-events: none;
+}
+
+/* -------------------------------------------------Table END ------------------------------------------------*/
+
+/* -------------------------------------------------Support Start ------------------------------------------------*/
+
+
+
+input[name="search"]
+{background-color: #D9E0E2;border: none;border-radius: 10px;height: 4vh;width: 25vw;}
+
+.titleSupportWrapper
+{
+    margin-top:5vh;
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    height: 10%;
+    justify-content: space-around;
+    border-bottom: 3px solid #D9E0E2;
+    margin-bottom: 5vh;
+}
+
+.supportCircleMenuIcon
+{
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+}
+
+.titleSupportWrapper > p
+{
+
+}
+
+.editContainerSupport {
+    width: 5vw !important;
+    height: 100% !important;
+    margin: 0 auto;
+    display: flex !important;
+    justify-content: space-evenly !important;
+    align-items: center;
+}
+
+.problemContainer
+{display: flex;width: 100%;flex-flow: column;}
+
+.problemRow
+{
+
+    display: flex;
+    background-color: #D9E0E2;
+    border-radius: 10px;
+    color: white;
+    justify-content: space-around;
+    margin-top: 2vh;
+    height: 7vh;
+
+}
+
+.problemRow > p
+{
+    font-size: 1.5em;
+    margin: 0;
+    align-self: center;
+}
+
+.editContainer > a
+{
+    height: 50%;
+    align-self: center;
+}
+
+.problemTitleWrapper,.problemAuthorWrapper,.problemLastUpdatedWrapper
+{
+    height:100%;
+    font-size: 1.3em;
+}
+
+.problemTitleWrapper
+{
+    width: 20%;
+    margin-left: 2%;
+}
+
+.problemAuthorWrapper
+{
+    width: 20%;
+    text-align: center;
+}
+
+.problemLastUpdatedWrapper
+{
+    width: 20%;
+    text-align: center;
+}
+
+.titleSupport
+{
+
+}
+
+.editContainer
+{display: flex;flex-flow: row;width: 15%;justify-content: space-evenly;width: 15%;}
+
+.messageContainer
+{
+    width: 100%;
+    color: #233142;
+}
+
+.messageContianer > hr{
+    display: block;
+    margin: 1em 0; padding: 0;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid white;
+}
+
+.messageHeader
+{
+    color: #233142;
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 2vw;
+}
+
+.messageAuthorContainer
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.messageAuthor
+{
+    font-size: 2em;
+}
+
+.messageBox
+{
+    width: 96%;
+    border-bottom: 2px solid #233142;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.messageTitle
+{
+    font-size: 3.5vw;
+    font-weight: bold;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.message
+{
+    background-color: #EBF7FD;
+    border-radius: 13px;
+    color: #233142;
+    padding: 2%;
+    border: 2px solid #233142;
+    margin-bottom: 2vw;
+}
+
+.answerMessage
+{
+
+}
+
+.answerMessage >input[type="submit"]
+{
+    transition: background-color 0.2s;
+}
+
+.answerImg
+{
+    align-self: center;
+    height: 3vw !important;
+    width: 3vw!important;
+    background-size: contain !important;
+    border: 2px solid #233142;
+    border-radius: 50px;
+    background-color: white;
+    margin-right: 1vw;
+    object-fit: cover;
+}
+
+.messageHeader > p{
+    margin: 0;
+    align-self: center;
+    font-size: 2em;
+    margin-left: 1vw;
+
+}
+
+.messageText
+{
+    margin-bottom: 1vw;
+    overflow-wrap: anywhere;
+}
+
+.answerMessage > p
+{
+    font-weight: bold;
+}
+
+.answerMessage > textarea
+{
+    width: 99.3%;
+    height: 8vw;
+    border: 3px solid #233142;
+    resize: none;
+    border-radius: 5px;
+    color: #233142;
+}
+
+.answerMessage > input
+{
+    height: 2.4vw;
+    width: 15%;
+    font-size: 1.3em;
+    border: 0px solid #6F96A5;
+    color: white;
+    background-color: #6F96A5;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 1vw;
+}
+
+.answerMessage >input[type="submit"]:hover
+{
+    background-color: #233142;
+    cursor: pointer;
+}
+
+.problemDeleteBtn
+{
+    border:none;
+    background-color: transparent;
+    background-size: 70%;
+    height: 100%;
+    width: 100%;
+}
+
+.problemDeleteBtn:hover
+{
+    cursor: pointer;
+}
+
+/* -------------------------------------------------Support END ------------------------------------------------*/
+
+/* -------------------------------------Buttons START ------------------------------------------*/
+
+.buttonSuccess
+{
+    color: white;
+    background-color: #21EF88;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.1vw;
+    font-weight: bold;
+    transition: 0.2s background-color;
+    margin-left: 84%;
+    height: 10%;
+    width: 14%;
+}
+
+.buttonCancel
+{
+    color: white;
+    background-color: #F80008;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: 0.2s background-color;
+}
+
+.buttonSuccess:hover
+{
+    background-color:#A4BCC4;
+    cursor: pointer;
+}
+
+.buttonCancel:hover
+{
+    background-color:#A4BCC4;
+    cursor: pointer;
+}
+
+/* -------------------------------------Buttons END --------------------------------------------*/
+
+/* -------------------------------------Media Query width < 1270  --------------------------------------------*/
+
+@media (max-width: 1270px) {
+
+/* ------------------------------------- Layout Start -------------------------------------------------*/
+    aside{
+        width: 100px;
+        min-width: 100px;
+        max-width: 100px;
+    }
+
+    aside > ul > li
+    {
+        font-size: 50%;
+        margin-bottom: 15%;
+    }
+
+    aside > ul > li > a
+    {
+        flex-direction: column;
+        width: 100px;
+        margin-left: -54%;
+    }
+
+    aside > ul > li > a > i {
+        margin-right: 0%;
+    }
+
+    aside > ul{
+        margin-bottom: 40px;
+        margin-left: -5px;
+    }
+
+    #logoContainer {
+        width: 100%;
+        margin-left: 0%;
+        font-size: 100%;
+    }
+
+    #logoContainer > h1 {
+        display: none;
+    }
+
+    #headerOptions, #headerNotificationList {
+        width: 28% !important;
+    }
+
+    ul > li
+    {
+        font-size: 90%;
+    }
+
+/* ------------------------------------- Layout End -------------------------------------------------*/
+
+/* ------------------------------------- Dashboard Start -------------------------------------------------*/
+
+    .dashboardWrap {
+        width: 55%;
+    }
+    .dashboardNews {
+        width: 45%;
+    }
+
+    .newsText
+    {
+        padding: 4.5% 4.5% 4.5% 0%;
+        font-size: 1.4vw;
+    }
+
+    .newsContent
+    {
+        height: 5vw;
+    }
+
+/* ------------------------------------- Dashboard End -------------------------------------------------*/
+
+/* ------------------------------------- User Start -------------------------------------------------*/
+
+    .profileIMG {
+        width: 12vw !important;
+        height: 14vw !important;
+    }
+
+    .profileHeader > h1 {
+        font-size: 4vw;
+    }
+
+    .buttonSuccess {
+        font-size: 1.7vw;
+        margin-left: 77%;
+        width: 21%;
+    }
+
+/* ------------------------------------- User End -------------------------------------------------*/
+
+/* ------------------------------------- Rights Start -------------------------------------------------*/
+
+    .generalTable
+    {
+        width: 100%;
+    }
+
+    th
+    {
+        font-size: 2vw;
+    }
+
+    td > form > select
+    {
+        width: 6.1vw;
+        height: 1.9vw;
+        font-size: 1.1vw;
+    }
+
+    td
+    {
+        font-size: 1.5vw;
+        height: 5vw;
+    }
+
+    .trashEditTable {
+        width: 1.3vw !important;
+        height: 2vw !important;
+    }
+
+    .editIconEdiTable {
+        height: 2vw !important;
+        width: 1.7vw !important;
+    }
+
+    .editColumn {
+        margin-top: 2.5vw;
+    }
+
+    .departmentCircle {
+        height: 2.8vw;
+        width: 2.8vw;
+        border: 2px solid white;
+    }
+
+    .paginationCenter {
+        width: 60%;
+    }
+
+/* ------------------------------------- Rights End -------------------------------------------------*/
+
+/* ------------------------------------- Support Start -------------------------------------------------*/
+
+    .messageTitle {
+        font-size: 7.5vw;
+    }
+
+    .messageText {
+        margin-bottom: 3vw;
+    }
+
+    .answerMessage > textarea {
+        height: 14vw;
+    }
+
+    .answerMessage > input
+    {
+        width: 23%;
+        font-size: 2.5vw;
+        height: 4vw;
+    }
+
+    .answerImg {
+        height: 5vw !important;
+        width: 5vw!important;
+    }
+
+/* ------------------------------------- Support End -------------------------------------------------*/
+}
+@media (min-height: 1000px) {
+
+    .asideMainTable
+    {
+        min-height: 100vh;
+    }
+}
+
+/* -------------------------------------Media Query width < 800  --------------------------------------------*/
+
+@media (max-width: 800px) {
+
+/* ------------------------------------- Layout Start -------------------------------------------------*/
+    aside
+    {
+        width: 250px;
+        margin-top: 0px;
+        left: -20px;
+        transition: 0.4s;
+        min-width: 250px;
+        max-width: 250px;
+    }
+
+    .visible
+    {
+        left: 250px;
+    }
+
+    .asideMainTable {
+        margin-left: -250px;
+    }
+
+    aside > ul > li
+    {
+        font-size: 100%;
+        margin-bottom: 0%;
+    }
+
+    aside > ul > li > a
+    {
+        flex-direction: row;
+        width: 93%;
+        margin-left: 0%;
+    }
+
+    aside > ul > li > a > i {
+        margin-right: 4%;
+    }
+
+    aside > ul{
+        margin-bottom: 5%;
+        margin-left: -5%;
+    }
+
+    #logoContainer {
+        width:90%;
+        height: 100px;
+        margin-left: 4%;
+        font-size: 150%;
+        margin-top: 25%;
+        margin-bottom: 5%;
+    }
+
+    #logoContainer > h1 {
+        display: block;
+    }
+
+    #headerOptions, #headerNotificationList {
+        width: 40% !important;
+    }
+
+    .main-wrap
+    {
+        margin-top: 100px;
+    }
+
+/* ------------------------------------- Layout End -------------------------------------------------*/
+
+/* ------------------------------------- Dashboard Start -------------------------------------------------*/
+
+    .dashboard
+    {
+        flex-direction: column;
+    }
+    .dashboardContent > h1
+    {
+        font-size: 4vw;
+    }
+
+    .dashboardContentWrapper
+    {
+        width: 190%;
+    }
+
+    .dashboardElement
+    {
+        width: 13% !important;
+        height: 14vw !important;
+        font-size: 2.8vw;
+    }
+
+    .usernameDashboard
+    {
+        font-size: 5vw;
+    }
+
+    .dashboardContent
+    {
+        margin-top: -7%;
+    }
+
+    .userIconDashboard {
+        height: 18vw !important;
+        width: 15vw !important;
+    }
+
+    .dashboardNews > h1
+    {
+        font-size: 4vw;
+    }
+
+    .newsContent {
+        height: 11vw;
+    }
+
+    .dashboardNews {
+        width: 100%;
+    }
+
+    .newsText {
+        font-size: 3vw;
+    }
+
+
+
+/* ------------------------------------- Dashboard End -------------------------------------------------*/
+
+/* ------------------------------------- User Start -------------------------------------------------*/
+
+    .profileHeader
+    {
+        height: 20%;
+    }
+
+    .profileInformation
+    {
+        margin-top: 10%;
+        width: 100%;
+    }
+
+    .profileHeader > h1
+    {
+        font-size: 6vw;
+    }
+
+    .profileIMG
+    {
+        width: 19vw !important;
+        height: 22vw !important;
+    }
+
+    .userInformationDetails, .userInformationOutput {
+        font-size: 1.4em;
+        width: 100%;
+    }
+
+    .informationDetailsWrap {
+        width: 90%;
+    }
+
+    .userInformationOutput {
+
+    }
+
+    .inputTextForm {
+        width: 100%;
+        height: 10%;
+    }
+
+    .userInformationOutput > label {
+        margin-top: 3%;
+    }
+
+    .departmentSelectContainer {
+        width: 96%;
+        margin-top: 10%;
+    }
+
+    .departmentSelectColumn {
+        width: 47%;
+    }
+
+    .selectContainer {
+        height: 55vw;
+    }
+
+    .selectableDepartment > p {
+        font-size: 3vw;
+    }
+
+    .selectableDepartment {
+        height: 16.8%;
+    }
+
+    .buttonSuccess {
+        font-size: 3vw;
+        margin-left: 2%;
+        width: 31%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .departmentSelectColumn > h1 {
+        font-size: 4.5vw;
+    }
+
+/* ------------------------------------- User End -------------------------------------------------*/
+
+
+/* ------------------------------------- Rights Start -------------------------------------------------*/
+
+
+    th
+    {
+        border-bottom: 4px solid #A4BCC4;
+        font-size: 3vw;
+    }
+
+    td
+    {
+        font-size: 2.4vw;
+        height: 19vw;
+        max-width: 37vw;
+        text-overflow: ellipsis;
+    }
+
+    td:nth-child(0n+3)
+    {
+        overflow: hidden;
+    }
+
+    th:last-child
+    {
+        max-width: 10vw;
+    }
+
+    td > form > select
+    {
+        width: 10.2vw;
+        height: 3vw;
+        font-size: 1.9vw;
+    }
+
+    .trashEditTable {
+        width: 2vw !important;
+        height: 2.9vw !important;
+        margin-top: 20%;
+        display: none;
+    }
+
+    .editIconEdiTable {
+        height: 3.9vw !important;
+        width: 2.6vw !important;
+        margin-bottom: 4.1vw;
+        display: none;
+    }
+
+    .tableProfileIMG
+    {
+        display: none;
+    }
+
+    .editColumn
+    {
+        margin-bottom: 1%;
+    }
+
+    .departmentCircle {
+        height: 3.5vw;
+        width: 3.5vw;
+        border: 1px solid white;
+    }
+
+    .paginationCenter {
+        width: 100%;
+        font-size: 1.2em;
+    }
+
+
+/* ------------------------------------- Rights End -------------------------------------------------*/
+
+
+/* ------------------------------------- Support End -------------------------------------------------*/
+
+    .messageTitle {
+        font-size: 10.5vw;
+    }
+
+    .answerMessage > input {
+        width: 40%;
+        font-size: 4vw;
+        height: 9vw;
+        margin-top: 2vw;
+    }
+
+    .answerMessage > textarea {
+        height: 25vw;
+    }
+
+    .message
+    {
+        margin-bottom: 6vw;
+    }
+
+    .messageText {
+        font-size: 0.9em;
+    }
+
+    .answerImg {
+        height: 9vw !important;
+        width: 9vw!important;
+        margin-right: 2vw;
+    }
+
+/* ------------------------------------- Support End -------------------------------------------------*/
+
+}
+/* ------------------------------------- Validation Start -------------------------------------------------*/
+
+input:required{
+    border: 2px solid red;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+input:valid {
+    border: 2px solid #36506C;
+}
+
+textarea:required{
+    border: 2px solid red;
+}
+
+textarea:invalid {
+    border: 2px solid red;
+}
+
+textarea:valid {
+    border: 2px solid #36506C;
+}
+
+.unchanged {
+    border: 2px solid #36506C !important;
+}
+
+/* ------------------------------------- Validation End -------------------------------------------------*/
+
+
+/* -------------------------------------Media Query width < 550  --------------------------------------------*/
+
+@media (max-width: 550px) {
+
+    .dashboardElement
+    {
+        width: 23% !important;
+        height: 21vw !important;
+        font-size: 3.7vw;
+    }
+
+    .usernameDashboard
+    {
+        font-size: 6vw;
+    }
+
+    .dashboardContent > h1
+    {
+        font-size: 6vw;
+    }
+
+    .dashboardNews > h1
+    {
+        font-size: 6vw;
+    }
+
+    .userIconDashboard {
+        height: 28vw !important;
+        width: 24vw !important;
+    }
+
+    #headerOptions, #headerNotificationList {
+        width: 55% !important;
+    }
+
+}
+
+

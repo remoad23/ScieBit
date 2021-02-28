@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base href="/document">
+  <link rel="stylesheet" type="text/css" href="" />
+  <link rel="stylesheet" type="text/css" href="" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+<header>
+  <div id="burgerMenu" class="burgerMenuIcon" onclick="toggleSideMenu()"></div>
+  <p></p>
+  <div id="loggedUserImg">
+    <div class="headerNav">
+      <div id="headerNotificationButton" class="notificationIcon headerNotification" onclick="showNotifications()"></div>
+      <div id="userImg" class="userIconWhite" onclick="showOptions()"></div>
+    </div>
+    <ul id="headerOptions">
+      <li><a href="http://localhost/Advanced-Web-Dev-2020-2021/public/langDe"><i class="worldIcon"></i>Language: English</a></li>
+      <li><a href="" id="headerUserNav"><i class="userIconWhite"></i>User Profile</a></li>
+      <li><a href="http://localhost/Advanced-Web-Dev-2020-2021/public/Logout"><i class="powerIcon"></i>Log Out</a></li>
+    </ul>
+    <ul id="headerNotificationList">
+      <li id="getMoreNotifcations">
+        <i class="plusIcon" id="notificationPlusIcon">
+        </i>Further Messages
+      </li>
+    </ul>
+  </div>
+</header>
+<div class="asideMainTable">
+  <aside id="sideMenu">
+    <div id="logoContainer">
+      <div class="logoIcon"></div>
+      <h1>ScieBit</h1>
+    </div>
+    <ul>
+      <li>
+        <a href="http://localhost/Advanced-Web-Dev-2020-2021/public"><i class="homeIcon"></i>Dashboard</a></li>
+      <li>
+        <a href="" id="userNav"><i class="userIconWhite"></i>User Profile</a>
+      </li>
+      <li>
+        <a href="http://localhost/Advanced-Web-Dev-2020-2021/public/document"><i class="folderIconWhite"></i>Documents</a>
+      </li>
+    </ul>
+
+    <ul>
+      <li>
+        <a id="contactNavURL" href="http://localhost/Advanced-Web-Dev-2020-2021/public/Kontakt"><i class="letterIcon"></i>Contact</a>
+      </li>
+      <li>
+        <a href="" id="contactNav" ><i class="editIconWhite"></i>Manage Users</a>
+      </li>
+      <li>
+        <a href="" id="manageAdminNav" ><i class="editIconWhite"></i>Manage Admins</a>
+      </li>
+      <li>
+        <a href="/" id="supportNav"><i class="searchIconWhite"></i>Support</a>
+      </li>
+    </ul>
+  </aside>
+  <script>
+    localStorage.removeItem('user');
+    let url = new URLSearchParams(window.location.search);
+    let id = url.get('id');
+    let token = url.get('token');
+
+
+    fetch( `http://localhost/Advanced-Web-Dev-2020-2021/public/drive/request/usertype/${id}/${token}`)
+      .then((res) => {
+        res.json()
+          .then((re) => window.localStorage.setItem('user',re))
+          .then(function(){
+          if(localStorage.getItem('user') === "User")
+          {
+            document.getElementById('contactNav')
+              .parentElement
+              .remove();
+            document.getElementById('manageAdminNav')
+              .parentElement
+              .remove();
+            document.getElementById('supportNav')
+              .parentElement
+              .remove();
+          }
+          else if(localStorage.getItem('user') === "Admin") {
+            document.getElementById('contactNavURL')
+              .parentElement
+              .remove();
+            document.getElementById('contactNav')
+              .href = "http://localhost/Advanced-Web-Dev-2020-2021/public/Rechtesystem/User/0";
+            document.getElementById('manageAdminNav')
+              .href = "http://localhost/Advanced-Web-Dev-2020-2021/public/Rechtesystem/Admin/0";
+            document.getElementById('supportNav')
+              .href = "http://localhost/Advanced-Web-Dev-2020-2021/public/Admin/Support/0";
+          }
+        });
+      });
+
+
+
+  </script>
+  <main>
+    <div class="main-wrap">
+      <app-root></app-root>
+    </div>
+  </main>
+</div>
+<footer>
+  <div class="list">
+    <ul class="footerList">
+      <h1>Information</h1>
+      <li><a href="http://localhost/Advanced-Web-Dev-2020-2021/public/Impressum">Legal Notice</a></li>
+      <li><a href="http://localhost/Advanced-Web-Dev-2020-2021/public/Policy">Policy</a></li>
+      <li><a href="http://localhost/Advanced-Web-Dev-2020-2021/public/about">About us</a></li>
+    </ul>
+    <ul class="footerList">
+      <h1>Information</h1>
+      <li><a href="/"> Placeholder</a></li>
+      <li><a href="/"> Placeholder</a></li>
+      <li><a href="/"> Placeholder</a></li>
+    </ul>
+  </div>
+  <p id="copyrightText">Copyright by ScieBit 2020</p>
+</footer>
+</body>
+<script>
+  let notificationShown = false;
+  let optionShown = false;
+  function showNotifications()
+  {
+    let notification = document.getElementById("headerNotificationList");
+    if(optionShown){
+      showOptions();
+    }
+    if(notification.style.display === "flex")
+    {
+      notification.style.display = "none";
+      notification.style.opacity = "0";
+      notificationShown = false;
+    }
+    else{
+      notification.style.display = "flex";
+      notification.style.opacity = "1";
+      notificationShown = true;
+    }
+  }
+
+  function showOptions()
+  {
+    let options = document.getElementById("headerOptions");
+    if(notificationShown){
+      showNotifications();
+    }
+    if(options.style.display === "flex")
+    {
+      options.style.display = "none";
+      options.style.opacity = "0";
+      optionShown = false;
+    }
+    else{
+      options.style.display = "flex";
+      options.style.opacity = "1";
+      optionShown = true;
+    }
+  }
+
+  function toggleSideMenu(){
+    let burgerMenu = document.getElementById("burgerMenu");
+    let sideMenu = document.getElementById("sideMenu");
+    sideMenu.classList.toggle("visible");
+    burgerMenu.classList.toggle("crossIcon");
+    burgerMenu.classList.toggle("burgerMenuIcon");
+  }
+
+
+</script>
+</html>
+
