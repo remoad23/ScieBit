@@ -5,7 +5,7 @@ Dateiverwaltungssystem
 
 Funktionsumfang
 
-Hochladen von Dokumenten (per Drag’n’Drop) \n
+Hochladen von Dokumenten (per Drag’n’Drop) <br/>
 Hochladen von einzelnen Dokumenten oder auch Ordnern
 Herunterladen von Dateien und Ordnern
 Zuordnung beliebiger Keywords 
